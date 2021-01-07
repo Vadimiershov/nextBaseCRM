@@ -12,7 +12,7 @@ public class HelpDesk {
             crmUS4.driver.get("https://login2.nextbasecrm.com/stream/");
             WebElement findLogin = crmUS4.driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
 
-            findLogin.sendKeys("helpdesk51@cybertekschool.com");
+            findLogin.sendKeys("hr51@cybertekschool.com");
             Thread.sleep(2000);
             WebElement findPassword = crmUS4.driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
 
@@ -31,10 +31,10 @@ public class HelpDesk {
             findPoll.click();
             Thread.sleep(2000);
 
-            WebElement pollTitle = crmUS4.driver.findElement(By.xpath("//input[@id='POST_TITLE']"));
+            //WebElement pollTitle = crmUS4.driver.findElement(By.xpath("//input[@id='POST_TITLE']"));
 
-            pollTitle.clear(); // to clear message that is being duplicated
-            pollTitle.sendKeys("Automation Testing Practice User Story #4");
+            //pollTitle.clear(); // to clear message that is being duplicated
+            //pollTitle.sendKeys("Automation Testing Practice User Story #4");
 
             crmUS4.driver.switchTo().frame(0); // 0-parent frame
             WebElement pollMessage = crmUS4.driver.findElement(By.xpath("//body[@contenteditable=\"true\"]"));

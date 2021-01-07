@@ -1,10 +1,11 @@
 package UserStory4;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.GetDriverMethod;
 
-public class HelpDesk {
+public class HelpDesk2 {
     public static void main(String[] args) throws InterruptedException {
 
         GetDriverMethod crmUS4 = new GetDriverMethod();
@@ -12,7 +13,7 @@ public class HelpDesk {
         crmUS4.driver.get("https://login2.nextbasecrm.com/stream/");
         WebElement findLogin = crmUS4.driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
 
-        findLogin.sendKeys("helpdesk51@cybertekschool.com");
+        findLogin.sendKeys("helpdesk52@cybertekschool.com");
         Thread.sleep(2000);
         WebElement findPassword = crmUS4.driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
 
@@ -33,10 +34,10 @@ public class HelpDesk {
 
         /** !!!!!!!!!!!!!!!Poll Title was removed by Cybertek developers!!!!!!!!!!!!**/
 
-    //    WebElement pollTitle = crmUS4.driver.findElement(By.xpath("//input[@id='POST_TITLE']"));
+        //    WebElement pollTitle = crmUS4.driver.findElement(By.xpath("//input[@id='POST_TITLE']"));
 
-    //    pollTitle.clear(); // to clear message that is being duplicated
-    //    pollTitle.sendKeys("Automation Testing Practice User Story #4");
+        //    pollTitle.clear(); // to clear message that is being duplicated
+        //    pollTitle.sendKeys("Automation Testing Practice User Story #4");
 
         crmUS4.driver.switchTo().frame(0); // 0-parent frame
         WebElement pollMessage = crmUS4.driver.findElement(By.xpath("//body[@contenteditable=\"true\"]"));

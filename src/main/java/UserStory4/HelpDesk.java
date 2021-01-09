@@ -69,6 +69,25 @@ public class HelpDesk {
         allowMultipleChoices.click();
         Thread.sleep(2000);
 
+
+
+        WebElement removeAllUsers = crmUS4.driver.findElement(By.xpath("//span[@class=\"feed-add-post-del-but\"]"));
+        removeAllUsers.click();
+
+        WebElement addReceivers = crmUS4.driver.findElement(By.cssSelector("#bx-destination-tag"));
+
+        addReceivers.click();
+
+        WebElement addReceiverField  = crmUS4.driver.findElement(By.xpath(""));
+        addReceiverField.sendKeys("helpdesk51@cybertekschool.com");
+        addReceiverField.sendKeys("helpdesk52@cybertekschool.com");
+        addReceiverField.sendKeys("hr51@cybertekschool.com");
+        addReceiverField.sendKeys("hr52@cybertekschool.com");
+
+
+
+
+
         //     WebElement addRecipients = crmUS4.driver.findElement(By.xpath("//div[@id='feed-add-post-destination-container]"));
         //    addRecipients.clear();
 

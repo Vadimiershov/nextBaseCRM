@@ -1,9 +1,12 @@
 package utilities;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginHr51 {
+
+    public static WebDriver driver;
 
     public static void LoginHr51method() {
 

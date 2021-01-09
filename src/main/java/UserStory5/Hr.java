@@ -2,6 +2,8 @@ package UserStory5;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utilities.GetDriverMethod;
 import utilities.LoginHelpDesk51;
@@ -12,95 +14,91 @@ import java.util.concurrent.TimeUnit;
 
 public class Hr extends LoginHr51{
 
+
+
     public static void main(String[] args) throws InterruptedException {
 
 
 
-        GetDriverMethod crmUS4 = new GetDriverMethod();
+        GetDriverMethod chromeDriver = new GetDriverMethod();
 
-        crmUS4.driver.get("https://login2.nextbasecrm.com/stream/");
-        WebElement findLogin = crmUS4.driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
+        chromeDriver.driver.get("https://login2.nextbasecrm.com/stream/");
+        WebElement findLogin = chromeDriver.driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
 
-        findLogin.sendKeys("helpdesk52@cybertekschool.com");
+        findLogin.sendKeys("helpdesk51@cybertekschool.com");
         Thread.sleep(2000);
-        WebElement findPassword = crmUS4.driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
+        WebElement findPassword = chromeDriver.driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
 
         findPassword.sendKeys("UserUser");
         Thread.sleep(2000);
-        WebElement rememberMeOnThisComputer = crmUS4.driver.findElement(By.xpath("//label[@class='login-item-checkbox-label']"));
+        //WebElement rememberMeOnThisComputer = crmUS4.driver.findElement(By.xpath("//label[@class='login-item-checkbox-label']"));
 
-        rememberMeOnThisComputer.click();
-        Thread.sleep(2000);
-        WebElement login = crmUS4.driver.findElement(By.xpath("//input[@type='submit']"));
+        //rememberMeOnThisComputer.click();
+        //Thread.sleep(2000);
+        WebElement login = chromeDriver.driver.findElement(By.xpath("//input[@type='submit']"));
 
         Thread.sleep(2000);
         login.click();
 
-        WebElement findPoll = crmUS4.driver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-vote']"));
+        WebElement findPoll = chromeDriver.driver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-vote']"));
         findPoll.click();
         Thread.sleep(2000);
 
-        /** !!!!!!!!!!!!!!!Poll Title was removed by Cybertek developers!!!!!!!!!!!!**/
-
-        //    WebElement pollTitle = crmUS4.driver.findElement(By.xpath("//input[@id='POST_TITLE']"));
-
-        //    pollTitle.clear(); // to clear message that is being duplicated
-        //    pollTitle.sendKeys("Automation Testing Practice User Story #4");
-
-        crmUS4.driver.switchTo().frame(0); // 0-parent frame
-        WebElement pollMessage = crmUS4.driver.findElement(By.xpath("//body[@contenteditable=\"true\"]"));
+        chromeDriver.driver.switchTo().frame(0); // 0-parent frame
+        WebElement pollMessage = chromeDriver.driver.findElement(By.xpath("//body[@contenteditable=\"true\"]"));
 
         pollMessage.clear();
         pollMessage.sendKeys("Selenium practice!");
 
-        crmUS4.driver.switchTo().parentFrame(); // to return
-        WebElement pollQuestion = crmUS4.driver.findElement(By.xpath("//input[@id=\"question_0\"]"));
+        chromeDriver.driver.switchTo().parentFrame(); // to return
+        WebElement pollQuestion = chromeDriver.driver.findElement(By.xpath("//input[@id=\"question_0\"]"));
         pollQuestion.clear();
-        pollQuestion.sendKeys("How long did it take me to automate user Story#5?");
+        String pollExpectedQuestion = "Question 1?";
+        pollQuestion.sendKeys(pollExpectedQuestion);
         Thread.sleep(2000);
 
-        WebElement answer1 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  1']"));
+        WebElement answer1 = chromeDriver.driver.findElement(By.xpath("//input[@placeholder='Answer  1']"));
         answer1.clear();
         answer1.sendKeys("3 hours");
         Thread.sleep(2000);
 
-        WebElement answer2 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  2']"));
+        WebElement answer2 = chromeDriver.driver.findElement(By.xpath("//input[@placeholder='Answer  2']"));
         answer2.clear();
         answer2.sendKeys("6 hours");
         Thread.sleep(2000);
 
-        WebElement answer3 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  3']"));
+        WebElement answer3 = chromeDriver.driver.findElement(By.xpath("//input[@placeholder='Answer  3']"));
         answer3.clear();
         answer3.sendKeys("Longer than today's Java class ");
         Thread.sleep(2000);
 
-        WebElement allowMultipleChoices = crmUS4.driver.findElement(By.xpath("//input[@id='multi_0']"));
+        WebElement allowMultipleChoices = chromeDriver.driver.findElement(By.xpath("//input[@id='multi_0']"));
+
         allowMultipleChoices.click();
         Thread.sleep(2000);
 
-        WebElement toallEmloyeesCancel = crmUS4.driver.findElement(By.xpath("//span[@class='feed-add-post-del-but']"));
-        toallEmloyeesCancel.click();
+        WebElement totallEmloyeesCancel = chromeDriver.driver.findElement(By.xpath("//span[@class='feed-add-post-del-but']"));
+        totallEmloyeesCancel.click();
 
 
-        WebElement addPersons = crmUS4.driver.findElement(By.xpath("//a[@id='bx-destination-tag']"));
+        WebElement addPersons = chromeDriver.driver.findElement(By.xpath("//a[@id='bx-destination-tag']"));
         addPersons.click();
 
-        WebElement inputRecepientsField = crmUS4.driver.findElement(By.xpath("//input[@id='feed-add-post-destination-input']"));
+        WebElement inputRecepientsField = chromeDriver.driver.findElement(By.xpath("//input[@id='feed-add-post-destination-input']"));
 
 
-        inputRecepientsField.sendKeys("hr52@cybertekschool.com");
+        inputRecepientsField.sendKeys("hr51@cybertekschool.com");
 
 
-        WebElement peopleAdded = crmUS4.driver.findElement(By.xpath("//div[@class='bx-finder-box-item-t7-name']"));
-        crmUS4.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        WebElement peopleAdded = chromeDriver.driver.findElement(By.xpath("//div[@class='bx-finder-box-item-t7-name']"));
+        chromeDriver.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         peopleAdded.click();
 
-        WebElement sentPollButton = crmUS4.driver.findElement(By.xpath("//button[@id='blog-submit-button-save']"));
+        WebElement sentPollButton = chromeDriver.driver.findElement(By.xpath("//button[@id='blog-submit-button-save']"));
         sentPollButton.click(); // Poll submitted
 
-        WebElement questionPollTitleVerification = crmUS4.driver.findElement(By.xpath("//div[@class='bx-vote-question-title']"));
+        WebElement questionPollTitleVerification = chromeDriver.driver.findElement(By.xpath("//div[@class='bx-vote-question-title']"));
         String pollCreatedActualQuestion = questionPollTitleVerification.getText();
-        String pollExpectedQuestion = "How long did it take me to automate user Story#5?";
 
         if(pollCreatedActualQuestion.equals(pollExpectedQuestion)){
             System.out.println(pollCreatedActualQuestion);
@@ -110,11 +108,59 @@ public class Hr extends LoginHr51{
             System.out.println("Something went wrong!!!");
         }
 
-        WebElement myProfileAvatarButton = crmUS4.driver.findElement(By.xpath("//span[@class='user-img user-default-avatar']"));
+        WebElement myProfileAvatarButton = chromeDriver.driver.findElement(By.xpath("//span[@class='user-img user-default-avatar']"));
         myProfileAvatarButton.click();
 
-        WebElement logOutButton  = crmUS4.driver.findElement(By.xpath("//span[contains(text(),'Log out')]"));
+        WebElement logOutButton  = chromeDriver.driver.findElement(By.xpath("//span[contains(text(),'Log out')]"));
         logOutButton.click();
+        Thread.sleep(2000);
+
+
+        //Hr51 start to login
+
+        try {
+            findLogin.sendKeys("hr51@cybertekschool.com");
+        }catch (StaleElementReferenceException e){
+            findLogin = chromeDriver.driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
+            findLogin.clear();
+            findLogin.sendKeys("hr51@cybertekschool.com");
+        }
+
+        try {
+            findPassword.sendKeys("UserUser");
+        }catch (StaleElementReferenceException e){
+            findPassword = chromeDriver.driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
+            findPassword.sendKeys("UserUser");
+        }
+
+        try {
+            login.click();
+        }catch (StaleElementReferenceException e) {
+            login = chromeDriver.driver.findElement(By.xpath("//input[@type='submit']"));
+            login.click();
+        }
+        WebElement pollPostTitle = chromeDriver.driver.findElement(By.cssSelector("div#blog_post_body_2885"));
+        if(pollPostTitle.getText().equals(pollExpectedQuestion)) {
+            System.out.println("Hr successfully see the poll");
+        }else{
+            System.out.println("Hr can't see the poll");
+        }
+
+        WebElement answerCheckbox = chromeDriver.driver.findElement(By.xpath("//label[@for='vote_checkbox_218_570'][1]"));
+        answerCheckbox.click();
+
+        WebElement voteButton = chromeDriver.driver.findElement(By.xpath("//button[@data-bx-vote-button='actVoting'][1]"));
+        voteButton.click();
+
+        WebElement percentValue = chromeDriver.driver.findElement(By.xpath("//span[@data-bx-vote-result='percent']"));
+        System.out.println(percentValue.getText());
+
+
+
+
+    }
+
+
 
 
 
@@ -124,4 +170,4 @@ public class Hr extends LoginHr51{
 
 
     }
-}
+

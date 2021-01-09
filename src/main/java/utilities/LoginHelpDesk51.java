@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 
 public class LoginHelpDesk51 {
 
-    public static void LoginHelpDesk51method() {
+    public LoginHelpDesk51() {
 
         GetDriverMethod chromeDriver = new GetDriverMethod();
 
@@ -13,7 +13,7 @@ public class LoginHelpDesk51 {
 
         WebElement findLogin = chromeDriver.driver.findElement(By.xpath("//input[@name='USER_LOGIN']"));
 
-        findLogin.sendKeys("helpdesk51@cybertekschool.com");
+        findLogin.sendKeys("hr51@cybertekschool.com");
 
         WebElement findPassword = chromeDriver.driver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
 

@@ -1,10 +1,7 @@
 package UserStory5;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import utilities.GetDriverMethod;
-import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -82,22 +79,38 @@ public class Precondition {
 
 
             WebElement peopleAdded = crmUS4.driver.findElement(By.xpath("//div[@class='bx-finder-box-item-t7-name']"));
-            crmUS4.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+            Thread.sleep(2000);
+        try {
             peopleAdded.click();
+        }catch (StaleElementReferenceException e){
+            peopleAdded = crmUS4.driver.findElement(By.xpath("//div[@class='bx-finder-box-item-t7-name']"));
+            peopleAdded.click();
+        }
 
 
 
 
         inputRecepientsField.sendKeys("helpdesk52@cybertekschool.com");
-        crmUS4.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        peopleAdded.click();
+        Thread.sleep(2000);
+        try {
+            peopleAdded.click();
+        }catch (StaleElementReferenceException e){
+            peopleAdded = crmUS4.driver.findElement(By.xpath("//div[@class='bx-finder-box-item-t7-name']"));
+            peopleAdded.click();
+        }
+
 
 
 
         inputRecepientsField.click();
             inputRecepientsField.sendKeys("marketing52@cybertekschool.com");
-        crmUS4.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        peopleAdded.click();
+        Thread.sleep(2000);
+        try {
+            peopleAdded.click();
+        }catch (StaleElementReferenceException e){
+            peopleAdded = crmUS4.driver.findElement(By.xpath("//div[@class='bx-finder-box-item-t7-name']"));
+            peopleAdded.click();
+        }
 
 
 

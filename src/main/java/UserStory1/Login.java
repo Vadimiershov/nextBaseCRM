@@ -19,9 +19,12 @@ public static void main(String[] args) {
     // logInAsHelpDesk52(driver);
     // logInAsMarketing51(driver);
     // logInAsMarketing52(driver);
+    ForgotPasswordLink(driver);
 
 
 }
+
+
     // static method logInAsHR51 will accept a WebDriver parameter...
     // and after execution will login to "https://login2.nextbasecrm.com" as a "hr51" user
     // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******
@@ -104,6 +107,20 @@ public static void main(String[] args) {
         checkboxRememberMe.click();
         driver.findElement(By.xpath("//input[@type='submit']")).click();
 
+    }
+
+    // static method ForgotPasswordLink will accept a WebDriver parameter and after...
+    // execution will go to "https://login2.nextbasecrm.com/?forgot_password=yes"
+    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******
+    // ****** UserStory1.Login.ForgotPasswordLink(driver); **********
+    public static void ForgotPasswordLink(WebDriver driver){
+        driver.get("https://login2.nextbasecrm.com");
+        driver.findElement(By.xpath("//a[@class='login-link-forgot-pass']")).click();
+        if(driver.getCurrentUrl().contains("forgot_password")){
+            System.out.println("FORGOT YOUR PASSWORD? link is working properly. PASSED!");
+        }else{
+            throw new RuntimeException("\"FORGOT YOUR PASSWORD? link is NOT working properly. ERROR\"");
+        }
     }
 
 

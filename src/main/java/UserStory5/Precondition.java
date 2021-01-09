@@ -11,7 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Precondition {
 
-    public void  PreconditionCall() throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
+
 
         GetDriverMethod crmUS4 = new GetDriverMethod();
 
@@ -34,11 +35,14 @@ public class Precondition {
         findPoll.click();
         Thread.sleep(2000);
 
-        WebElement pollText = crmUS4.driver.findElement(By.className("bxhtmled-iframe-cnt"));
-        pollText.sendKeys("Automation Testing Practice User Story #4");
-        Thread.sleep(2000);
+        crmUS4.driver.switchTo().frame(0); // 0-parent frame
+        WebElement pollMessage = crmUS4.driver.findElement(By.xpath("//body[@contenteditable=\"true\"]"));
 
-        /*WebElement pollQuestion = crmUS4.driver.findElement(By.xpath("//input[@id=\"question_0\"]"));
+        pollMessage.clear();
+        pollMessage.sendKeys("Selenium practice");
+
+        crmUS4.driver.switchTo().parentFrame(); // to return
+        WebElement pollQuestion = crmUS4.driver.findElement(By.xpath("//input[@id=\"question_0\"]"));
         pollQuestion.clear();
         pollQuestion.sendKeys("How long did it take me to automate user Story#4?");
         Thread.sleep(2000);
@@ -49,35 +53,27 @@ public class Precondition {
         Thread.sleep(2000);
 
         WebElement answer2 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  2']"));
-        //   answer2.clear();
+        answer2.clear();
         answer2.sendKeys("6 hours");
         Thread.sleep(2000);
 
         WebElement answer3 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  3']"));
-        //      answer3.clear();
+        answer3.clear();
         answer3.sendKeys("Longer than today's Java class ");
         Thread.sleep(2000);
-
-
-
-
-
-
-
-
-/*
-
-
 
         WebElement allowMultipleChoices = crmUS4.driver.findElement(By.xpath("//input[@id='multi_0']"));
         allowMultipleChoices.click();
         Thread.sleep(2000);
 
-            //WebElement addRecipients = crmUS4.driver.findElement(By.xpath("//div[@id='feed-add-post-destination-container]"));
-            //addRecipients.clear();
 
-            WebElement addMoreRecipients = crmUS4.driver.findElement(By.xpath("//a[@id='bx-destination-tag']"));
-            addMoreRecipients.click();
+
+            WebElement toallEmloyeesCancel = crmUS4.driver.findElement(By.xpath("//span[@class='feed-add-post-del-but']"));
+            toallEmloyeesCancel.click();
+
+
+            WebElement addPersons = crmUS4.driver.findElement(By.xpath("//a[@id='bx-destination-tag']"));
+            addPersons.click();
 
             WebElement inputRecepientsField = crmUS4.driver.findElement(By.xpath("//input[@id='feed-add-post-destination-input']"));
 
@@ -92,31 +88,23 @@ public class Precondition {
 
 
 
-
-
-
-
-        inputRecepientsField.click();
-        inputRecepientsField.sendKeys("helpdesk51@cybertekschool.com");
+        inputRecepientsField.sendKeys("helpdesk52@cybertekschool.com");
         crmUS4.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         peopleAdded.click();
 
 
 
         inputRecepientsField.click();
-            inputRecepientsField.sendKeys("marketing51@cybertekschool.com");
+            inputRecepientsField.sendKeys("marketing52@cybertekschool.com");
         crmUS4.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         peopleAdded.click();
-
-*/
-
-
 
 
 
 
     }
+    }
 
 
 
-}
+

@@ -13,7 +13,7 @@ public class GetDriverMethod {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
-
-
-
 }
+
+
+

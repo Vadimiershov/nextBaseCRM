@@ -22,7 +22,7 @@ public class Hr{
         driver.manage().window().maximize();
 
         Login.logInAsHR51(driver);
-        PollCreatingPrecondition.pollCreate(driver);
+    //    PollCreatingPrecondition.pollCreate(driver);
         LogOutFunction.logOut(driver);
         Login.logInAsHR52(driver);
 

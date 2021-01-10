@@ -54,12 +54,12 @@ public class HelpDesk {
             Thread.sleep(2000);
 
             WebElement answer2 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  2']"));
-            //   answer2.clear();
+            answer2.clear();
             answer2.sendKeys("6 hours");
             Thread.sleep(2000);
 
             WebElement answer3 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  3']"));
-            //      answer3.clear();
+             answer3.clear();
             answer3.sendKeys("Longer than today's Java class ");
             Thread.sleep(2000);
 

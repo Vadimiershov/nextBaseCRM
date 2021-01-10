@@ -45,6 +45,7 @@ public static void main(String[] args) {
     // ****** UserStory1.Login.logInAsHR52(driver); **********
     public static void logInAsHR52(WebDriver driver){
         driver.get("https://login2.nextbasecrm.com");
+        driver.findElement(By.xpath("//input[@type='text']")).clear();
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("hr52@cybertekschool.com");
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys("UserUser");
         WebElement checkboxRememberMe= driver.findElement(By.xpath("//input[@type='checkbox']"));

@@ -30,7 +30,7 @@ public static void main(String[] args) {
     // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******
     // ****** UserStory1.Login.logInAsHR51(driver); **********
     public static void logInAsHR51(WebDriver driver){
-    driver.get("https://login2.nextbasecrm.com");
+    //driver.get("https://login2.nextbasecrm.com");
     driver.findElement(By.xpath("//input[@type='text']")).sendKeys("hr51@cybertekschool.com");
     driver.findElement(By.xpath("//input[@type='password']")).sendKeys("UserUser");
     WebElement checkboxRememberMe= driver.findElement(By.xpath("//input[@type='checkbox']"));

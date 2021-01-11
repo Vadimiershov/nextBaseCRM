@@ -2,14 +2,8 @@ package UserStory5;
 
 import UserStory1.Login;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import utilities.GetDriverMethod;
-
-import java.util.concurrent.TimeUnit;
 
 public class Hr{
 
@@ -22,7 +16,7 @@ public class Hr{
         driver.manage().window().maximize();
 
         Login.logInAsHR51(driver);
-        PollCreatingPrecondition.pollCreate(driver);
+        //PollCreatingPrecondition.pollCreate(driver);
         LogOutFunction.logOut(driver);
         Login.logInAsHR52(driver);
 

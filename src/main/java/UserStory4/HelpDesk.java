@@ -67,8 +67,10 @@ public class HelpDesk {
             allowMultipleChoices.click();
             Thread.sleep(2000);
 
-            //     WebElement addRecipients = crmUS4.driver.findElement(By.xpath("//div[@id='feed-add-post-destination-container]"));
-            //    addRecipients.clear();
+                WebElement addRecipients = crmUS4.driver.findElement(By.xpath("//div[@id='feed-add-post-destination-container]"));
+                addRecipients.clear();
+
+                ////span/input[@id='feed-add-post-destination-input']
 
             //    addRecipients.sendKeys("helpdesk52@cybertekschool.com");
 

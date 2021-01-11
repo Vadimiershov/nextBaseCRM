@@ -12,7 +12,10 @@ public class ClockIn {
   WebDriverManager.chromedriver().setup();
   //create instance of the browser
         WebDriver driver = new ChromeDriver();
-        
+        //go to this website "http://login2.nextbasecrm.com/"
+        driver.get("http://login2.nextbasecrm.com/");
+        //enter userLogin
+        driver.findElement(By.name("USER_LOGIN")).sendKeys("hr51@cybertekschool.com");
 
     }
 }

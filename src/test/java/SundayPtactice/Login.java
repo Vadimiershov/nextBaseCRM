@@ -22,4 +22,32 @@ public class Login extends Driver {
         loginBtn.click();
     }
 
+    public void login52Help() {
+        loginBox.sendKeys(users.user52);
+        passwordBox.sendKeys(users.password);
+        loginBtn.click();
+    }
+
+    public void login51HR() {
+        loginBox.sendKeys(users.userHR51);
+        passwordBox.sendKeys(users.password);
+        loginBtn.click();
+    }
+    public void login52HR() {
+        loginBox.sendKeys(users.userHR52);
+        passwordBox.sendKeys(users.password);
+        loginBtn.click();
+    }
+    public void login51Marketing() {
+        loginBox.sendKeys(users.userMarketing51);
+        passwordBox.sendKeys(users.password);
+        loginBtn.click();
+    }
+
+    public void login52Marketing() {
+        loginBox.sendKeys(users.userMarketing52);
+        passwordBox.sendKeys(users.password);
+        loginBtn.click();
+    }
+
 }

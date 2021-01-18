@@ -14,7 +14,7 @@ public class RandomClass {
 
     public static void randomQuestion() {
 
-        ArrayList<String> questionsForGroup = new ArrayList<>(Arrays.asList("What is Spike user story", "what is maintenance testing and who does it?", "What is the difference between UAT and system testing",
+        ArrayList<String> questionsForGroup = new ArrayList(Arrays.asList("What is Spike user story", "what is maintenance testing and who does it?", "What is the difference between UAT and system testing",
                 "Name three common approaches of Agile", "What are the difference between an edge case, a corner case, a base case and a boundary case?", "Difference between error, failure, bug, defect",
                 "What is scalability testing", "what is backlog increment and time box", "What three Agile approaches do you know", "What is Assertions, what are you using it for, which library are you keeping it at",
                 "what are the difference between ''for'' and for each loop and while loop?","What kind of variables a class can consist of?", "What is a Local Variable?", "What is an Instance Variable?",
@@ -32,7 +32,7 @@ public class RandomClass {
                 "Is JDK required on each machine to run a Java program?", "What's the difference between comparison done by equals method and == operator?", "Can a variable be local and static at the same time?",
                 "In a class implementing an interface, can we change the value of any variable defined in the interface?", "I have multiple constructors defined in a class. Is it possible to call a constructor from another constructor's body?",
                 "What's the base class of all exception classes?"));
-        ArrayList<String> namesOfGroupmates = new ArrayList<>(Arrays.asList("Jeren", "Inci", "Galyna", "Esma"));
+        ArrayList<String> namesOfGroupmates = new ArrayList(Arrays.asList("Jeren", "Inci", "Galyna", "Esma"));
 
         Random random1 = new Random();
         Random random2 = new Random();

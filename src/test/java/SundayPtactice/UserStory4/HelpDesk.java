@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -22,15 +23,12 @@ public class HelpDesk {
 
 
 
-
-
   @Test (description = "Verify users can write a poll message title with question & answer US4 TOD G26-46")
     public void TC1_G26_54(){
     WebDriver localChromeDriver = Driver.getDriver(); // return type was chromeDriver
     Urls newUrlsUS4 = new Urls(); //setting up url
     localChromeDriver.get(newUrlsUS4.nextbasecrm); // sending link
 
-    Users userHelp51 = new Users(); // setting up a new User
     Login loginPage = new Login(); // setting up Login
     loginPage.login(); // login method for user HelpDesk51
 
@@ -42,13 +40,68 @@ public class HelpDesk {
 
     homePage.poll.click();
     localChromeDriver.switchTo().frame(0);
-    WebElement pollMessage = localChromeDriver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-vote']"));
+    WebElement pollMessage = localChromeDriver.findElement(By.xpath("//body[@contenteditable=\"true\"]"));
     pollMessage.clear();
     pollMessage.sendKeys("Practice Automated Test Case");
 
+    String expectedPollMessage = "Practice Automated Test Case";
 
 
 
+
+  //  Assert.assertEquals();
+
+
+//  WebElement findPoll = crmUS4.driver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-vote']"));
+//            findPoll.click();
+//            Thread.sleep(2000);
+//
+//            //WebElement pollTitle = crmUS4.driver.findElement(By.xpath("//input[@id='POST_TITLE']"));
+//
+//            //pollTitle.clear(); // to clear message that is being duplicated
+//            //pollTitle.sendKeys("Automation Testing Practice User Story #4");
+//
+//            crmUS4.driver.switchTo().frame(0); // 0-parent frame
+//            WebElement pollMessage = crmUS4.driver.findElement(By.xpath("//body[@contenteditable=\"true\"]"));
+//
+//            pollMessage.clear();
+//            pollMessage.sendKeys("Selenium practice");
+//
+//            crmUS4.driver.switchTo().parentFrame(); // to return
+//            WebElement pollQuestion = crmUS4.driver.findElement(By.xpath("//input[@id=\"question_0\"]"));
+//            pollQuestion.clear();
+//            pollQuestion.sendKeys("How long did it take me to automate user Story#4?");
+//            Thread.sleep(2000);
+//
+//            WebElement answer1 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  1']"));
+//            answer1.clear();
+//            answer1.sendKeys("3 hours");
+//            Thread.sleep(2000);
+//
+//            WebElement answer2 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  2']"));
+//            answer2.clear();
+//            answer2.sendKeys("6 hours");
+//            Thread.sleep(2000);
+//
+//            WebElement answer3 = crmUS4.driver.findElement(By.xpath("//input[@placeholder='Answer  3']"));
+//             answer3.clear();
+//            answer3.sendKeys("Longer than today's Java class ");
+//            Thread.sleep(2000);
+//
+//            WebElement allowMultipleChoices = crmUS4.driver.findElement(By.xpath("//input[@id='multi_0']"));
+//            allowMultipleChoices.click();
+//            Thread.sleep(2000);
+//
+//                WebElement addRecipients = crmUS4.driver.findElement(By.xpath("//div[@id='feed-add-post-destination-container]"));
+//                addRecipients.clear();
+//
+//                ////span/input[@id='feed-add-post-destination-input']
+//
+//            //    addRecipients.sendKeys("helpdesk52@cybertekschool.com");
+//
+//
+//        }
+//    }
 
 
 

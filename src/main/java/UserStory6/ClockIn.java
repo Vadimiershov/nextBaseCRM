@@ -2,9 +2,13 @@ package UserStory6;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ClockIn {
     public static void main(String[] args) throws InterruptedException {
@@ -25,8 +29,11 @@ public class ClockIn {
         driver.findElement(By.className("login-btn")).click();
         Thread.sleep(2000);
 
-        //driver.findElement(By.className("timeman-not-cl-text")).click();
-        //driver.findElement(By.id("timeman-background")).click();
+          WebDriverWait wait = new WebDriverWait(driver, 5);
+          WebElement clock = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='timeman-background']")));
+          JavascriptExecutor executor = (JavascriptExecutor) driver;
+          executor.executeScript("arguments[0].click()", clock);
+
 
 
 

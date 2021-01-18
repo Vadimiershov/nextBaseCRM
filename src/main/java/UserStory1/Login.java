@@ -19,7 +19,7 @@ public static void main(String[] args) {
     // logInAsHelpDesk52(driver);
     // logInAsMarketing51(driver);
     // logInAsMarketing52(driver);
-    ForgotPasswordLink(driver);
+    // ForgotPasswordLink(driver);
 
 
 }

@@ -10,6 +10,7 @@ public class LogOut extends Driver{
         myProfileAvatarBtn.click();
         WebElement logOutBtn = getDriver().findElement(By.xpath("//span[contains(text(),'Log out')]"));
         logOutBtn.click();
+        Thread.sleep(2000);
     }
 
 

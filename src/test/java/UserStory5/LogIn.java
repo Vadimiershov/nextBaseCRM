@@ -20,9 +20,15 @@ public class LogIn extends Driver{
     }
 
     public void loginHR52(){
-        loginBox.clear();
-        loginBox.sendKeys(login.hr51);
-        passwordBox.sendKeys(login.hr52);
+
+        try {
+            loginBox.clear();
+        }catch (StaleElementReferenceException e){
+            WebElement loginBox = getDriver().findElement(By.cssSelector("input[type='text']"));
+            loginBox.clear();
+        }
+        loginBox.sendKeys(login.hr52);
+        passwordBox.sendKeys(login.password);
         loginBtn.click();
     }
 

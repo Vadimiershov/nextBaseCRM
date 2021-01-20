@@ -39,8 +39,8 @@ public void setUpMethod() throws InterruptedException {
     //poll.Poll();
     LogOut logout = new LogOut();
     logout.setLogOut();
-   // localDriver.navigate().refresh();
-    Thread.sleep(2000);
+    localDriver.navigate().refresh();
+
     loginPage.loginHR52();
 
     //Driver.killDriver();

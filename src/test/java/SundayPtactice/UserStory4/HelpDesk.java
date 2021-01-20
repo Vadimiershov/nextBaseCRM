@@ -1,4 +1,5 @@
 package SundayPtactice.UserStory4;
+
 import SundayPtactice.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -12,52 +13,61 @@ import java.util.concurrent.TimeUnit;
 
 public class HelpDesk {
 
-
-  @BeforeClass (description = "Setting up Driver ")
-   public void setUpClass(){           // make sure we create method and then call existing one
-      Driver.setUpDriver();                 // taken from Driver class
-  }
+    WebDriver localChromeDriver1;
 
 
+    @BeforeClass(description = "Setting up Driver ")
+    public void setUpClass() {           // make sure we create method and then call existing one
+        Driver.setUpDriver();                 // taken from Driver class
+    }
 
+    @BeforeMethod(description = "getting url set up and running")
+    public void setUpChromePlusUrl() {
+        localChromeDriver1 = Driver.getDriver(); // return type was chromeDriver
+        //====================
+        Urls newUrlsUS4 = new Urls(); //setting up url
+        localChromeDriver1.get(newUrlsUS4.nextbasecrm); // sending link
 
-  @Test (description = "Verify users can write a poll message title with question & answer US4 TOD G26-46")
-    public void TC1_G26_54() {
-    WebDriver localChromeDriver1 = Driver.getDriver(); // return type was chromeDriver
-//====================
-    Urls newUrlsUS4 = new Urls(); //setting up url
-    localChromeDriver1.get(newUrlsUS4.nextbasecrm); // sending link
-
-    Login loginPage1 = new Login(); // setting up Login
-    loginPage1.login51Marketing(); // login method for user HelpDesk51
-
-    //===============================================================================
-    // Created poll
-    HomePage homePage = new HomePage();
-
-    Driver.implicitWait(); // added 5 sec implicit wait
-
-    homePage.poll.click();
-  //  localChromeDriver.switchTo().frame(0);
-  //  WebElement pollMessage = homePage.poll;
-   // pollMessage.clear();
-  //  pollMessage.sendKeys("Practice Automated Test Case");
-
-  }
-
-
-    @AfterMethod
-    public static void logOut(){
-      Driver.killDriver();
+        Login loginPage1 = new Login(); // setting up Login
+        loginPage1.login51Marketing(); // login method for user HelpDesk51
 
 
     }
 
-   // String expectedPollMessage = "Practice Automated Test Case";
+    @Test(description = "Verify users can write a poll message title with question & answer US4 TOD G26-46")
+    public void TC1_G26_54() {
+
+
+        //===============================================================================
+        // Created poll
+        HomePage homePage = new HomePage();
+
+        Driver.implicitWait(); // added 5 sec implicit wait
+
+        homePage.poll.click();
+
+   ThreadSleep.threadSleep(5);
+       localChromeDriver1.switchTo().frame(0);
+       WebElement pollMessage = homePage.pollMessage;
+        ThreadSleep.threadSleep(5);
+     // pollMessage.clear();
+    //   localChromeDriver1.navigate().refresh();
+     pollMessage.sendKeys("Practice Automated Test Case");
+
+    }
+
+
+    @AfterMethod
+    public static void logOut() {
+        Driver.killDriver();
+
+
+    }
+
+    // String expectedPollMessage = "Practice Automated Test Case";
 // String actualPollMessage = pollMessage.getText();
 
 //Assert.assertEquals(expectedPollMessage,actualPollMessage, "Let's see if poll message is matching what we have entered ");
-
 
 
     //// Setting up expected and actual
@@ -69,9 +79,6 @@ public class HelpDesk {
     //
     //       Driver.killDriver();
     //    }
-
-
-
 
 
 //  WebElement findPoll = crmUS4.driver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-vote']"));
@@ -126,16 +133,7 @@ public class HelpDesk {
 //    }
 
 
-
-
-
-
-
-
-
-
-
-  }
+}
 
 
 

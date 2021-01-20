@@ -18,6 +18,10 @@ public class Driver {
         return chromedriver;
     }
 
+    public static void navigateToURL(String url) {
+        getDriver().get(url);
+    }
+
     public static void killDriver() {
         chromedriver.quit();
     }

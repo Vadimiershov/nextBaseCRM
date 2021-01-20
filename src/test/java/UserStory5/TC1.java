@@ -22,7 +22,7 @@ public class TC1 {
     @BeforeMethod(description = "Setting up driver")
     private void setupMethod() {
         Driver.setChromedriver();
-        Driver.navigateToURL(Data.url);
+    //    Driver.navigateToURL(Data.url);
     }
 
     @AfterMethod(description = "Killing Driver")

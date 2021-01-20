@@ -1,4 +1,4 @@
-package SundayPtactice;
+package CRMNextBaseProject;
 
 import org.openqa.selenium.support.PageFactory;
 

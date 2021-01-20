@@ -1,4 +1,4 @@
-package SundayPtactice;
+package CRMNextBaseProject;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
-    public static WebDriver chromeDriver;
+    private static WebDriver chromeDriver;
 
    public static void setUpDriver() {
        WebDriverManager.chromedriver().setup();
@@ -18,6 +18,10 @@ public class Driver {
 
    public static WebDriver getDriver() {
        return chromeDriver;
+   }
+
+   public static void navigateToURL(String url) {
+       getDriver().get(url);
    }
 
    public static void killDriver() {

@@ -1,5 +1,7 @@
-package UserStory5;
+package CRMNextBaseProject;
 
+import UserStory5.Data2;
+import UserStory5.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -8,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LogIn extends Driver {
     private static LogIn loginInstance;
 
-    public LogIn () {
+    public LogIn() {
         PageFactory.initElements(getDriver(), this);
     }
 
@@ -29,7 +31,7 @@ public class LogIn extends Driver {
     @FindBy(how = How.CSS, using = "input[type='submit']")
     public WebElement loginBtn;
 
-    Data2 login = new Data2();
+    Data login = new Data();
 
     public void loginHR51() {
         loginBox.clear();

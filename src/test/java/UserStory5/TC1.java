@@ -20,9 +20,10 @@ public class TC1 {
     }
     */
     @BeforeMethod(description = "Setting up driver")
+
     private void setupMethod() {
         Driver.setChromedriver();
-    //    Driver.navigateToURL(Data.url);
+        CRMNextBaseProject.Driver.navigateToURL(Data2.url);
     }
 
     @AfterMethod(description = "Killing Driver")

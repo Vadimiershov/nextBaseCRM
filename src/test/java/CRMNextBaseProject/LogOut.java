@@ -1,9 +1,10 @@
-package UserStory5;
+package CRMNextBaseProject;
 
+import UserStory5.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class LogOut extends Driver{
+public class LogOut extends Driver {
 
     public void setLogOut() throws InterruptedException {
         WebElement myProfileAvatarBtn = getDriver().findElement(By.xpath("//span[@class='user-img user-default-avatar']"));

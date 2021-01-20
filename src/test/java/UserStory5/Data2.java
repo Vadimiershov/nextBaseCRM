@@ -3,7 +3,7 @@ package UserStory5;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class Data extends Driver{
+public class Data2 extends Driver{
     //URL
     public static final String url = "https://login2.nextbasecrm.com/";
 

@@ -30,12 +30,8 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//input[@placeholder='Answer  3']")
     public WebElement answer3;
 
-
-
-
-
-
-
+    @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
+    public WebElement taskModule;
 
 
 

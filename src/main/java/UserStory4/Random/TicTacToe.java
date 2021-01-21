@@ -5,8 +5,8 @@ import java.util.*;
 
 public class TicTacToe {
 
-    static ArrayList<Integer> playersPositions = new ArrayList<Integer>();
-    static ArrayList<Integer> computersPositions = new ArrayList<Integer>();
+    static ArrayList<Integer> playersPositions = new ArrayList<Integer>(); //Global
+    static ArrayList<Integer> computersPositions = new ArrayList<Integer>(); //
 
     public static void main(String[] args) {
 
@@ -38,6 +38,8 @@ public class TicTacToe {
             }
             Random rand = new Random();
             int compPos = rand.nextInt(9) + 1;
+
+
             while (playersPositions.contains(compPos) || computersPositions.contains(compPos)) {
                 compPos = rand.nextInt(9) + 1;
             }

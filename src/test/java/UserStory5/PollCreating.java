@@ -1,13 +1,26 @@
 package UserStory5;
 
+import CRMNextBaseProject.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-public class PollCreating extends Driver{
+public class PollCreating extends Driver {
+
+    //
 
     public void Poll() throws InterruptedException {
 
+        /*
+
+        WebElement userBox = getDriver().findElement(By.xpath("//input[@name='USER_LOGIN']"));
+        userBox.sendKeys("hr51@cybertekschool.com");
+        WebElement findPassword = chromedriver.findElement(By.xpath("//input[@name='USER_PASSWORD']"));
+        findPassword.sendKeys("UserUser");
+        WebElement login = chromedriver.findElement(By.xpath("//input[@type='submit']"));
+        login.click();
         WebElement findPoll = chromedriver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-vote']"));
         findPoll.click();
         Thread.sleep(2000);
@@ -20,7 +33,7 @@ public class PollCreating extends Driver{
         chromedriver.switchTo().parentFrame(); // to return
         WebElement pollQuestion = chromedriver.findElement(By.xpath("//input[@id=\"question_0\"]"));
         pollQuestion.clear();
-        String pollExpectedQuestion = "Question 1?";
+        String pollExpectedQuestion = "Question?";
         pollQuestion.sendKeys(pollExpectedQuestion);
         Thread.sleep(2000);
 
@@ -93,9 +106,12 @@ public class PollCreating extends Driver{
 
 
 
+
+
+
+
+
+
+         */
     }
-
-
-
-
 }

@@ -2,6 +2,9 @@ package CRMNextBaseProject;
 
 //import UserStory5.Driver;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 public class Data extends Driver {
     //URL
     public static final String url = "https://login2.nextbasecrm.com/";
@@ -12,6 +15,7 @@ public class Data extends Driver {
     String loginBtnCSS = "input[type='submit']";
     String myProfileAvatarBtnXpath = "//span[@class='user-img user-default-avatar']";
     String logOutBtnXpath = "//span[contains(text(),'Log out')]";
+
 
 
     //Login Data

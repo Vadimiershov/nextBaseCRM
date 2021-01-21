@@ -4,7 +4,7 @@ package CRMNextBaseProject;
 
 public class Data extends Driver {
     //URL
-    final String url = "https://login2.nextbasecrm.com/";
+    public static final String url = "https://login2.nextbasecrm.com/";
 
     //WebElements
     String loginBoxCSS = "input[type='text']";

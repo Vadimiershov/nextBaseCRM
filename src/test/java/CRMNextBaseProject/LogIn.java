@@ -12,7 +12,7 @@ public class LogIn extends Driver{
         PageFactory.initElements(getDriver(), this);
     }
 
-    protected static LogIn getInstance() {
+    public static LogIn getInstance() {
         if (loginInstance == null) {
             loginInstance = new LogIn();
         }

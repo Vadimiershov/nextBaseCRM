@@ -1,13 +1,12 @@
 package CRMNextBaseProject;
 
-import UserStory5.Data2;
-import UserStory5.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class LogIn extends Driver {
+public class LogIn extends Driver{
     private static LogIn loginInstance;
 
     public LogIn() {
@@ -18,7 +17,7 @@ public class LogIn extends Driver {
         if (loginInstance == null) {
             loginInstance = new LogIn();
         }
-        return loginInstance;
+       return loginInstance;
     }
 
 
@@ -32,6 +31,8 @@ public class LogIn extends Driver {
     public WebElement loginBtn;
 
     Data login = new Data();
+
+
 
     public void loginHR51() {
         loginBox.clear();

@@ -27,7 +27,7 @@ public class Data extends Driver {
 
     //Data for Poll
     public static final String messageInPoll = "Test Case Automation";
-    public static final String questionInPoll = "Why is it taking soooo long to automate";
+    public static final String questionInPoll = "Why is it taking soooo long to automate?";
     public static final String answer1 = "Study more";
     public static final String answer2 = "Let it go";
     public static final String answer3 = "Whatever";

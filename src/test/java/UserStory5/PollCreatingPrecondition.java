@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 
 public class PollCreatingPrecondition extends Driver {
-
+//!!! change questionInPoll in DATA class for success verification and creation poll
 
 
     public void Poll() {

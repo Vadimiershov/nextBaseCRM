@@ -29,10 +29,10 @@ public class TC1 {
 
     }
 
-    //@AfterMethod(description = "Killing Driver")
-    //private void killingDriver() {
-     //   Driver.killDriver();
-   // }
+    @AfterMethod(description = "Killing Driver")
+    private void killingDriver() {
+        Driver.killDriver();
+    }
 
 
    /* @Test(description = "Login-LogOut scenario")

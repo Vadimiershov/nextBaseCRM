@@ -36,23 +36,20 @@ public class searchBox {
 
         //Write in the search box: "Activity Stream"
         searchBox.sendKeys("Activity Stream"+"\n");
-        //Refresh page or driver.back()
+
+        //driver.back()
+        driver.navigate().back();
+
+        //Locate the searchBox
+        searchBox.sendKeys("Tasks"+"\n");
+        driver.navigate().back();
+
+
+
         // Use try and catch for exception
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            Thread.sleep(5000);
+            driver.close();
+        }
     }
 
 
@@ -64,4 +61,4 @@ public class searchBox {
 
 
 
-}
+

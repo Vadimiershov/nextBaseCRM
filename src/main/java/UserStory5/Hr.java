@@ -17,12 +17,11 @@ public class Hr{
 
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver=new ChromeDriver();
-        driver.manage().window().maximize();
+        Driver.setChromedriver();
+        WebDriver driver = Driver.getDriver();
 
         Login.logInAsHR51(driver);
-    //    PollCreatingPrecondition.pollCreate(driver);
+        //PollCreatingPrecondition.pollCreate(driver);
         LogOutFunction.logOut(driver);
         Login.logInAsHR52(driver);
 

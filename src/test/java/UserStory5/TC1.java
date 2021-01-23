@@ -1,11 +1,9 @@
 package UserStory5;
 
 import CRMNextBaseProject.Data;
-import CRMNextBaseProject.LogIn;
-import CRMNextBaseProject.LogOut;
 import CRMNextBaseProject.Driver;
+import CRMNextBaseProject.LogIn;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,41 +11,29 @@ import org.testng.annotations.Test;
 public class TC1 {
 
 
-    /*@BeforeMethod
-    public void setUpMethod() throws InterruptedException {
-
-
-        Driver.setChromedriver(); //setting up Chrome driver
-        WebDriver localDriver = Driver.getDriver();  // creating new local driver
-        Data urlMain = new Data(); //url object created
-        localDriver.get(urlMain.url); //navigate to Login Page
-        Thread.sleep(2000);
-
-    }
-    */
-    WebDriver localDriver;
+    //WebDriver localDriver;
     @BeforeMethod(description = "Setting up driver")
 
     private void setupMethod() {
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
-        //WebDriver chromedriver = Driver.getDriver();
-
-    }
-
-    @AfterMethod(description = "Killing Driver")
-    private void killingDriver() {
-        Driver.killDriver();
     }
 
     @Test
-    public void loginTest() throws InterruptedException {
+    public void loginTest() {
 
-        PollCreating pollCreating = new PollCreating();
-        pollCreating.Poll();
-
+        LogIn login = new LogIn();
+        login.loginHR51();
+        PollCreatingPrecondition pollCreatingPrecondition = new PollCreatingPrecondition();
+        pollCreatingPrecondition.Poll();
 
     }
+
+    //@AfterMethod(description = "Killing Driver")
+    //private void killingDriver() {
+     //   Driver.killDriver();
+   // }
+
 
    /* @Test(description = "Login-LogOut scenario")
     public void loginLogOutTest() throws InterruptedException {

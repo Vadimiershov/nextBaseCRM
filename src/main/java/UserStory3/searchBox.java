@@ -36,8 +36,8 @@ public class searchBox {
 
         //Write in the search box: "Activity Stream"
         searchBox.sendKeys("Activity Stream"+"\n");
-
-        //Reset the page
+        //Refresh page or driver.back()
+        // Use try and catch for exception
 
 
 

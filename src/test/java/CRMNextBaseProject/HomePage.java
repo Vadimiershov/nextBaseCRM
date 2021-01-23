@@ -48,12 +48,8 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//div[@class='bx-vote-question-title'][1]")
     public WebElement createdPollQuestion; // to verify question text, and poll creating
 
-
-
-
-
-
-
+    @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
+    public WebElement taskModule;
 
 
 

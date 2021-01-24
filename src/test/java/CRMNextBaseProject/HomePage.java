@@ -12,6 +12,12 @@ public class HomePage {
 
     }
 
+    @FindBy(how = How.XPATH, using = "//div[@id='user-block']")
+    public WebElement userBlock; // Personal Block with dropdown menu
+
+    @FindBy(how = How.XPATH, using = "//a[@class='menu-popup-item menu-popup-no-icon '][3]")
+    public WebElement logOutLink; //link to log out
+
     @FindBy(how = How.XPATH, using = "(//span[@class='feed-add-post-form-link'])[3]//span")
     public WebElement pollButton;
 

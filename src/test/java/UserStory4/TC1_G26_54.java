@@ -40,6 +40,9 @@ public class TC1_G26_54 {
 
         homePage.answer3.clear();
         homePage.answer3.sendKeys("Whatever");
+        homePage.clearRecipientsPoll.click();
+        homePage.removeAllEmployee.click();
+
 
 
 

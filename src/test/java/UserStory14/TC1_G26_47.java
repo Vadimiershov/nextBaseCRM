@@ -3,18 +3,15 @@ package UserStory14;
 import CRMNextBaseProject.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TC1_G26_47 {
-
 
     @BeforeClass
     public void setUpDriver1() {
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
         ThreadSleep.threadSleep(3);
-
     }
 
     @Test(description = "Verify HR Team can logout and back to login page")
@@ -58,7 +55,6 @@ public class TC1_G26_47 {
         loginPage3.loginBox.clear();
         ThreadSleep.threadSleep(3);
     }
-
 
    @AfterClass
     public void closeWebPage(){

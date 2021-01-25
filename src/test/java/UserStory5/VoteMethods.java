@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class VoteMethods {
 
-    LogIn login = new LogIn();
+    LogIn login = LogIn.getInstance();
     VotePage votePage = new VotePage();
     LogOut logOut = new LogOut();
 

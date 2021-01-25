@@ -63,10 +63,16 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//div[@id='feed-add-post-destination-container']")
     public WebElement clearRecipientsPoll;
 
-    @FindBy(how = How.XPATH, using = "//span[@class='feed-add-post-destination-text']")
+    @FindBy(how = How.XPATH, using = "//span[@class='feed-add-post-del-but']")
     public WebElement removeAllEmployee;
 
+    @FindBy(how = How.XPATH, using = "(//div[@class='bx-finder-box-item-t7-name'])[2]")
+    public WebElement addRecipientHD51 ;
 
-    ////span[@class='feed-add-post-destination-text']
+
+    ////a[@id='destination6647096_last_U542']
+
+
+
 
 }

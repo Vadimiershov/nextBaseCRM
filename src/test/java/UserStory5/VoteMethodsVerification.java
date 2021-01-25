@@ -20,8 +20,7 @@ public class VoteMethodsVerification {
             "Change question for the poll (duplicates not allowed)before running test in Data" +
             "by default users voting for first answer in the poll.")
     public void poleVote() {
-
-        LogIn login = new LogIn();
+        LogIn login = LogIn.getInstance();
         LogOut logout = new LogOut();
         login.loginHR51();
         PollCreatingPrecondition pollCreatingPrecondition = new PollCreatingPrecondition();

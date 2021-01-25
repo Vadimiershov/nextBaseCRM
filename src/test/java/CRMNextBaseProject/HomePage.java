@@ -30,6 +30,12 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//input[@placeholder='Answer  3']")
     public WebElement answer3;
 
+    @FindBy(how = How.XPATH, using = "//span[@class='user-name']")
+    public WebElement userNameAvatarButton;
+
+    @FindBy(how = How.XPATH, using = "//span[.='Log out']")
+    public WebElement logOutButton;
+
 
 
 

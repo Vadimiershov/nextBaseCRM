@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class Runner {
 
-    @BeforeMethod(description = "setting up some veriables")
+    @BeforeMethod(description = "setting up some variables")
     public void setUpDriver(){
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);

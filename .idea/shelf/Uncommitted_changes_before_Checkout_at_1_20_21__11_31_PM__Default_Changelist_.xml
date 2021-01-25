@@ -1,0 +1,9 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_1_20_21,_11_31_PM_[Default_Changelist]" date="1611203498816" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_20_21,_11_31_PM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 1/20/21, 11:31 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/CRMNextBaseProject/Login.class" />
+    <option name="AFTER_PATH" value="target/test-classes/CRMNextBaseProject/Login.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_20_21,_11_31_PM_[Default_Changelist]/Login.class" />
+  </binary>
+</changelist>

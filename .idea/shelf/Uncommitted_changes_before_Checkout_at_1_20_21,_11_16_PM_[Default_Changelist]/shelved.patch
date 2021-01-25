@@ -1,0 +1,159 @@
+Index: src/test/java/CRMNextBaseProject/Runner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package CRMNextBaseProject;\n\nimport UserStory1.Login;\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.net.Urls;\nimport org.testng.Assert;\nimport org.testng.annotations.BeforeMethod;\nimport org.testng.annotations.Test;\n\npublic class Runner {\n\n    @BeforeMethod(description = \"setting up some veriables\")\n\n    @Test(description = \"One single scenario dedicated to Login only, happy path\")\n    public void Login() {\n        Driver.setUpDriver();\n        WebDriver localChromeDriver = Driver.getDriver();\n        Data url = new Data();\n        localChromeDriver.get(url.url);\n        Data users = new Data();\n        LogIn loginPage = LogIn.getInstance();\n        loginPage.loginHR51();\n\n\n\n       Driver.killDriver();\n    }\n\n\n\n\n    }\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/CRMNextBaseProject/Runner.java b/src/test/java/CRMNextBaseProject/Runner.java
+--- a/src/test/java/CRMNextBaseProject/Runner.java	(revision f77b4e9415fb529fd36524788f56f754db10d4a0)
++++ b/src/test/java/CRMNextBaseProject/Runner.java	(date 1611186652486)
+@@ -1,36 +1,16 @@
+ package CRMNextBaseProject;
+ 
+-import UserStory1.Login;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.WebDriver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.net.Urls;
+-import org.testng.Assert;
+ import org.testng.annotations.BeforeMethod;
+-import org.testng.annotations.Test;
+ 
+ public class Runner {
+ 
+-    @BeforeMethod(description = "setting up some veriables")
+ 
+-    @Test(description = "One single scenario dedicated to Login only, happy path")
+-    public void Login() {
+-        Driver.setUpDriver();
+-        WebDriver localChromeDriver = Driver.getDriver();
+-        Data url = new Data();
+-        localChromeDriver.get(url.url);
+-        Data users = new Data();
+-        LogIn loginPage = LogIn.getInstance();
+-        loginPage.loginHR51();
+-
++    @BeforeMethod (description = "seting up driver ehre")
++
++    public static void settingUpDriver(){
++       Driver.setUpDriver();
+ 
+-
+-       Driver.killDriver();
+     }
+-
+-
+ 
+ 
+-    }
+-
+-
++}
+Index: src/main/java/UserStory1/Login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package UserStory1;\n\n\nimport io.github.bonigarcia.wdm.WebDriverManager;\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.chrome.ChromeDriver;\n\npublic class Login {\n// comments\npublic static void main(String[] args) {\n    WebDriverManager.chromedriver().setup();\n    WebDriver driver=new ChromeDriver();\n    driver.manage().window().maximize();\n    // logInAsHR51(driver);\n    // logInAsHR52(driver);\n    // logInAsHelpDesk51(driver);\n    // logInAsHelpDesk52(driver);\n    // logInAsMarketing51(driver);\n    // logInAsMarketing52(driver);\n    // ForgotPasswordLink(driver);\n\n\n}\n\n\n    // static method logInAsHR51 will accept a WebDriver parameter...\n    // and after execution will login to \"https://login2.nextbasecrm.com\" as a \"hr51\" user\n    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******\n    // ****** UserStory1.Login.logInAsHR51(driver); **********\n    public static void logInAsHR51(WebDriver driver){\n    driver.get(\"https://login2.nextbasecrm.com\");\n    driver.findElement(By.xpath(\"//input[@type='text']\")).sendKeys(\"hr51@cybertekschool.com\");\n    driver.findElement(By.xpath(\"//input[@type='password']\")).sendKeys(\"UserUser\");\n    WebElement checkboxRememberMe= driver.findElement(By.xpath(\"//input[@type='checkbox']\"));\n    checkboxRememberMe.click();\n    driver.findElement(By.xpath(\"//input[@type='submit']\")).click();\n\n}\n\n    // static method logInAsHR52 will accept a WebDriver parameter and after execution...\n    // will login to \"https://login2.nextbasecrm.com\" as a \"hr52\" user\n    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******\n    // ****** UserStory1.Login.logInAsHR52(driver); **********\n    public static void logInAsHR52(WebDriver driver){\n        //driver.get(\"https://login2.nextbasecrm.com\");\n        driver.findElement(By.xpath(\"//input[@type='text']\")).clear();\n        driver.findElement(By.xpath(\"//input[@type='text']\")).sendKeys(\"hr52@cybertekschool.com\");\n        driver.findElement(By.xpath(\"//input[@type='password']\")).sendKeys(\"UserUser\");\n        WebElement checkboxRememberMe= driver.findElement(By.xpath(\"//input[@type='checkbox']\"));\n        checkboxRememberMe.click();\n        driver.findElement(By.xpath(\"//input[@type='submit']\")).click();\n\n    }\n\n    // static method logInAsHelpDesk51 will accept a WebDriver parameter and after...\n    // execution will login to \"https://login2.nextbasecrm.com\" as a \"helpdesk51\" user\n    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******\n    // ****** UserStory1.Login.logInAsHelpDesk51(driver); **********\n    public static void logInAsHelpDesk51(WebDriver driver){\n        driver.get(\"https://login2.nextbasecrm.com\");\n        driver.findElement(By.xpath(\"//input[@type='text']\")).sendKeys(\"helpdesk51@cybertekschool.com\");\n        driver.findElement(By.xpath(\"//input[@type='password']\")).sendKeys(\"UserUser\");\n        WebElement checkboxRememberMe= driver.findElement(By.xpath(\"//input[@type='checkbox']\"));\n        checkboxRememberMe.click();\n        driver.findElement(By.xpath(\"//input[@type='submit']\")).click();\n\n    }\n\n    // static method logInAsHelpDesk52 will accept a WebDriver parameter and after...\n    // execution will login to \"https://login2.nextbasecrm.com\" as a \"helpdesk52\" user\n    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******\n    // ****** UserStory1.Login.logInAsHelpDesk52(driver); **********\n    public static void logInAsHelpDesk52(WebDriver driver){\n        driver.get(\"https://login2.nextbasecrm.com\");\n        driver.findElement(By.xpath(\"//input[@type='text']\")).sendKeys(\"helpdesk52@cybertekschool.com\");\n        driver.findElement(By.xpath(\"//input[@type='password']\")).sendKeys(\"UserUser\");\n        WebElement checkboxRememberMe= driver.findElement(By.xpath(\"//input[@type='checkbox']\"));\n        checkboxRememberMe.click();\n        driver.findElement(By.xpath(\"//input[@type='submit']\")).click();\n\n    }\n\n    // static method logInAsMarketing51 will accept a WebDriver parameter and after...\n    // execution will login to \"https://login2.nextbasecrm.com\" as a \"marketing51\" user\n    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******\n    // ****** UserStory1.Login.logInAsMarketing51(driver); **********\n    public static void logInAsMarketing51(WebDriver driver){\n        driver.get(\"https://login2.nextbasecrm.com\");\n        driver.findElement(By.xpath(\"//input[@type='text']\")).sendKeys(\"marketing51@cybertekschool.com\");\n        driver.findElement(By.xpath(\"//input[@type='password']\")).sendKeys(\"UserUser\");\n        WebElement checkboxRememberMe= driver.findElement(By.xpath(\"//input[@type='checkbox']\"));\n        checkboxRememberMe.click();\n        driver.findElement(By.xpath(\"//input[@type='submit']\")).click();\n\n    }\n\n    // static method logInAsMarketing52 will accept a WebDriver parameter and after...\n    // execution will login to \"https://login2.nextbasecrm.com\" as a \"marketing52\" user\n    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******\n    // ****** UserStory1.Login.logInAsMarketing52(driver); **********\n    public static void logInAsMarketing52(WebDriver driver){\n        driver.get(\"https://login2.nextbasecrm.com\");\n        driver.findElement(By.xpath(\"//input[@type='text']\")).sendKeys(\"marketing52@cybertekschool.com\");\n        driver.findElement(By.xpath(\"//input[@type='password']\")).sendKeys(\"UserUser\");\n        WebElement checkboxRememberMe= driver.findElement(By.xpath(\"//input[@type='checkbox']\"));\n        checkboxRememberMe.click();\n        driver.findElement(By.xpath(\"//input[@type='submit']\")).click();\n\n    }\n\n    // static method ForgotPasswordLink will accept a WebDriver parameter and after...\n    // execution will go to \"https://login2.nextbasecrm.com/?forgot_password=yes\"\n    // ****** IT HAS TO BE CALLED BY PACKAGE NAME AND CLASS NAME ******\n    // ****** UserStory1.Login.ForgotPasswordLink(driver); **********\n    public static void ForgotPasswordLink(WebDriver driver){\n        driver.get(\"https://login2.nextbasecrm.com\");\n        driver.findElement(By.xpath(\"//a[@class='login-link-forgot-pass']\")).click();\n        if(driver.getCurrentUrl().contains(\"forgot_password\")){\n            System.out.println(\"FORGOT YOUR PASSWORD? link is working properly. PASSED!\");\n        }else{\n            throw new RuntimeException(\"\\\"FORGOT YOUR PASSWORD? link is NOT working properly. ERROR\\\"\");\n        }\n    }\n\n\n\n\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/UserStory1/Login.java b/src/main/java/UserStory1/Login.java
+--- a/src/main/java/UserStory1/Login.java	(revision f77b4e9415fb529fd36524788f56f754db10d4a0)
++++ b/src/main/java/UserStory1/Login.java	(date 1611189529654)
+@@ -33,8 +33,8 @@
+     driver.get("https://login2.nextbasecrm.com");
+     driver.findElement(By.xpath("//input[@type='text']")).sendKeys("hr51@cybertekschool.com");
+     driver.findElement(By.xpath("//input[@type='password']")).sendKeys("UserUser");
+-    WebElement checkboxRememberMe= driver.findElement(By.xpath("//input[@type='checkbox']"));
+-    checkboxRememberMe.click();
++   // WebElement checkboxRememberMe= driver.findElement(By.xpath("//input[@type='checkbox']"));
++   // checkboxRememberMe.click();
+     driver.findElement(By.xpath("//input[@type='submit']")).click();
+ 
+ }
+Index: src/test/java/CRMNextBaseProject/LogIn.java
+===================================================================
+diff --git a/src/test/java/CRMNextBaseProject/LogIn.java b/src/test/java/CRMNextBaseProject/LogIn.java
+deleted file mode 100644
+--- a/src/test/java/CRMNextBaseProject/LogIn.java	(revision f77b4e9415fb529fd36524788f56f754db10d4a0)
++++ /dev/null	(revision f77b4e9415fb529fd36524788f56f754db10d4a0)
+@@ -1,79 +0,0 @@
+-package CRMNextBaseProject;
+-
+-import UserStory5.Data2;
+-import UserStory5.Driver;
+-import org.openqa.selenium.WebElement;
+-import org.openqa.selenium.support.FindBy;
+-import org.openqa.selenium.support.How;
+-import org.openqa.selenium.support.PageFactory;
+-
+-public class LogIn extends Driver {
+-    private static LogIn loginInstance;
+-
+-    public LogIn() {
+-        PageFactory.initElements(getDriver(), this);
+-    }
+-
+-    protected static LogIn getInstance() {
+-        if (loginInstance == null) {
+-            loginInstance = new LogIn();
+-        }
+-        return loginInstance;
+-    }
+-
+-
+-    @FindBy(how = How.CSS, using = "input[type='text']")
+-    public WebElement loginBox;
+-
+-    @FindBy(how = How.CSS, using = "input[type='password']")
+-    public WebElement passwordBox;
+-
+-    @FindBy(how = How.CSS, using = "input[type='submit']")
+-    public WebElement loginBtn;
+-
+-    Data login = new Data();
+-
+-    public void loginHR51() {
+-        loginBox.clear();
+-        loginBox.sendKeys(login.hr51);
+-        passwordBox.sendKeys(login.password);
+-        loginBtn.click();
+-    }
+-
+-    public void loginHR52(){
+-        loginBox.clear();
+-        loginBox.sendKeys(login.hr52);
+-        passwordBox.sendKeys(login.password);
+-        loginBtn.click();
+-    }
+-
+-    public void loginMarketing51() {
+-        loginBox.clear();
+-        loginBox.sendKeys(login.marketing51);
+-        passwordBox.sendKeys(login.password);
+-        loginBtn.click();
+-    }
+-
+-    public void loginMarketing52() {
+-        loginBox.clear();
+-        loginBox.sendKeys(login.marketing52);
+-        passwordBox.sendKeys(login.password);
+-        loginBtn.click();
+-    }
+-
+-    public void loginHelpDeck51() {
+-        loginBox.clear();
+-        loginBox.sendKeys(login.helpdesk51);
+-        passwordBox.sendKeys(login.password);
+-        loginBtn.click();
+-    }
+-
+-    public void loginHelpDeck52() {
+-        loginBox.clear();
+-        loginBox.sendKeys(login.helpdesk51);
+-        passwordBox.sendKeys(login.password);
+-        loginBtn.click();
+-    }
+-
+-
+-}

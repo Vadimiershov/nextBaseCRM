@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="279b56bd-c78f-4525-b016-d538d5a8ea02" name="Default Changelist" comment="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mhhGOGtHpKwD4Ttgd41uxH4uer" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="TestNG.TC1_G26_54.pollHRs">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelpDesk.TC1_G26_54" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SundayPtactice.UserStory4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SundayPtactice.UserStory4" />
+      <option name="MAIN_CLASS_NAME" value="SundayPtactice.UserStory4.HelpDesk" />
+      <option name="METHOD_NAME" value="TC1_G26_54" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CRMNextBaseProject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CRMNextBaseProject" />
+      <option name="MAIN_CLASS_NAME" value="CRMNextBaseProject.Runner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC1_G26_54" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserStory4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserStory4" />
+      <option name="MAIN_CLASS_NAME" value="UserStory4.TC1_G26_54" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC1_G26_54.Login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserStory4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserStory4" />
+      <option name="MAIN_CLASS_NAME" value="UserStory4.TC1_G26_54" />
+      <option name="METHOD_NAME" value="Login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC1_G26_54.pollHRs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserStory4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserStory4" />
+      <option name="MAIN_CLASS_NAME" value="UserStory4.TC1_G26_54" />
+      <option name="METHOD_NAME" value="pollHRs" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TC1_G26_54.pollHRs" />
+        <item itemvalue="TestNG.TC1_G26_54" />
+        <item itemvalue="TestNG.TC1_G26_54.Login" />
+        <item itemvalue="TestNG.Runner" />
+        <item itemvalue="TestNG.HelpDesk.TC1_G26_54" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="279b56bd-c78f-4525-b016-d538d5a8ea02" name="Default Changelist" comment="" />
+      <created>1609951634859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609951634859</updated>
+      <workItem from="1609951636081" duration="7971000" />
+      <workItem from="1610206368636" duration="56000" />
+      <workItem from="1610206433239" duration="48000" />
+      <workItem from="1610207251195" duration="16000" />
+      <workItem from="1610207551423" duration="6110000" />
+      <workItem from="1610321700591" duration="8131000" />
+      <workItem from="1610330691873" duration="1820000" />
+      <workItem from="1610399537016" duration="25767000" />
+      <workItem from="1610585637957" duration="6667000" />
+      <workItem from="1610638699006" duration="705000" />
+      <workItem from="1610644223799" duration="363000" />
+      <workItem from="1610662792737" duration="2206000" />
+      <workItem from="1610674110156" duration="3950000" />
+      <workItem from="1610755762235" duration="11440000" />
+      <workItem from="1610994733200" duration="2604000" />
+      <workItem from="1610997429261" duration="7994000" />
+      <workItem from="1611105158799" duration="1520000" />
+      <workItem from="1611177913708" duration="5030000" />
+      <workItem from="1611202732923" duration="4037000" />
+      <workItem from="1611252285766" duration="1262000" />
+      <workItem from="1611343831904" duration="768000" />
+      <workItem from="1611421686569" duration="10223000" />
+    </task>
+    <task id="LOCAL-00001" summary="Automated user story4 wit hDriver method">
+      <created>1609952168964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609952168964</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Automated user story4 wit hDriver method">
+      <created>1609952177365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609952177365</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added changes to helpdesk login 1 and created a class for helpdesk 2">
+      <created>1610054338622</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610054338622</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added changes to helpdesk login 1 and created a class for helpdesk 2">
+      <created>1610054354959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610054354959</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added changes to helpdesk login 1 and created a class for helpdesk 2">
+      <created>1610205723056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610205723056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added changes to helpdesk login 1 and created a class for helpdesk 2">
+      <created>1610296862123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610296862123</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added changes to helpdesk login 1 and created a class for helpdesk 2">
+      <created>1610302114121</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610302114121</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created Random class for interviews">
+      <created>1610492410096</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610492410096</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created Random class for interviews">
+      <created>1610567606148</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610567606148</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Created Random class for interviews">
+      <created>1610567657239</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610567657239</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Tic Tac Toe Game created">
+      <created>1610644244251</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610644244251</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tic Tac Toe Game created">
+      <created>1610644283421</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610644283421</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Tic Tac Toe Game created">
+      <created>1610664709311</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610664709312</updated>
+    </task>
+    <task id="LOCAL-00014" summary="More random classes">
+      <created>1610993312409</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610993312409</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updating USerStory 4 on folder test">
+      <created>1610997947933</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610997947933</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updating USerStory 4 on folder test">
+      <created>1611000041903</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611000041903</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611179058577</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611179058577</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611184983368</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611184983368</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611185310162</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611185310162</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611203162854</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611203162854</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611203178362</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611203178362</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611252458850</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611252458850</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611422228990</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611422228990</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611615573590</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611615573590</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+    <MESSAGE value="Automated user story4 wit hDriver method" />
+    <MESSAGE value="Added changes to helpdesk login 1 and created a class for helpdesk 2" />
+    <MESSAGE value="Created Random class for interviews" />
+    <MESSAGE value="Tic Tac Toe Game created" />
+    <MESSAGE value="More random classes" />
+    <MESSAGE value="Updating USerStory 4 on folder test" />
+    <MESSAGE value="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/RandomClass.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/MyClass.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/MyClass.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory6/ClockIn.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/CRMNextBaseProject/Driver.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/PracticeVesa.java</url>
+          <line>4</line>
+          <properties class="UserStory4.Random.PracticeVesa" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/MyClass.java</url>
+          <line>9</line>
+          <properties class="UserStory4.Random.MyClass" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/RandomClass.java</url>
+          <line>8</line>
+          <properties class="UserStory4.Random.RandomClass" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/ArraySort.java</url>
+          <line>18</line>
+          <properties class="UserStory4.Random.ArraySort" method="sortArray">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

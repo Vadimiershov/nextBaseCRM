@@ -55,7 +55,7 @@ public class HomePage {
     public WebElement createdPollQuestion; // to verify question text, and poll creating
 
     @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
-    public WebElement taskModule;
+    public WebElement taskModule;//add changes
 
 
 

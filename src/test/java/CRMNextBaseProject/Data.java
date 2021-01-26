@@ -26,8 +26,8 @@ public class Data extends Driver {
     public static final String password = "UserUser";
 
     //Data for Poll
-    public static final String messageInPoll = "Test Case Automation6";
-    public static final String questionInPoll = "Why is it taking soo long to automate6?";
+    public static final String messageInPoll = "Test Case Automation7";
+    public static final String questionInPoll = "Why is it taking soo long to automate7?";
     public static final String answer1 = "Study more";
     public static final String answer2 = "Let it go";
     public static final String answer3 = "Whatever";

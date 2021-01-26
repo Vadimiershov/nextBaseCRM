@@ -1,4 +1,4 @@
-package CRMNextBaseProject;
+package UserStory5;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,7 +55,7 @@ public class HomePage {
     public WebElement createdPollQuestion; // to verify question text, and poll creating
 
     @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
-    public WebElement taskModule;//changes
+    public WebElement taskModule;//add changes
 
 
 

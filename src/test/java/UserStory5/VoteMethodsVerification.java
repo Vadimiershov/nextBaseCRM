@@ -38,7 +38,7 @@ public class VoteMethodsVerification {
 
    @AfterMethod(description = "Killing Driver")
    private void killingDriver() {
-        Driver.killDriver();
+//        Driver.killDriver();
    }
 
 }

@@ -57,6 +57,12 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
     public WebElement taskModule;//changes
 
+    @FindBy(how = How.XPATH, using = "//span[@class='user-name']")
+    public WebElement userNameAvatarButton;
+
+    @FindBy(how = How.XPATH, using = "//span[.='Log out']")
+    public WebElement logOutButton;
+
 
 
 }

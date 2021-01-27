@@ -29,7 +29,7 @@ public class LogIn extends Driver{
     @FindBy(how = How.CSS, using = "input[type='submit']")
     public WebElement loginBtn;
 
-    Data login = new Data();
+
 
 
 

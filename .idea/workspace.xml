@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279b56bd-c78f-4525-b016-d538d5a8ea02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserStory4/Random/RandomClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserStory4/Random/RandomClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserStory4/Random/RandomClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserStory4/Random/RandomClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,6 +169,7 @@
       <workItem from="1611343831904" duration="768000" />
       <workItem from="1611421686569" duration="12471000" />
       <workItem from="1611784177407" duration="2402000" />
+      <workItem from="1611870922121" duration="238000" />
     </task>
     <task id="LOCAL-00001" summary="Automated user story4 wit hDriver method">
       <created>1609952168964</created>
@@ -362,7 +360,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611809715597</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611871021625</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611871021625</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1611871038217</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611871038217</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

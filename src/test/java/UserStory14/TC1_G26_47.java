@@ -11,47 +11,51 @@ public class TC1_G26_47 {
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
 
-        LogIn loginPage1 = LogIn.getInstance();
-        loginPage1.loginHR51();
+        LogIn loginPage1 = new LogIn();
+
         LogOut logout = new LogOut();
+
+        loginPage1.loginHR51();
         logout.setLogOut();
+
         Driver.killDriver();
+        ThreadSleep.threadSleep(3);
 
-    }
-
-    @Test(description = "Verify HR Team can logout and back to login page")
-    public void logOutHR2() {
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
 
-        LogIn loginPage2 = LogIn.getInstance();
+        LogIn loginPage2 = new LogIn();
+
         loginPage2.loginHR52();
-        LogOut logout = new LogOut();
         logout.setLogOut();
         Driver.killDriver();
+        ThreadSleep.threadSleep(3);
 
     }
-
-
-/*
 
     @Test(description = "Verify Marketing Team can logout and back to login page")
     public void logOutMarketingTeam() {
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
 
-        LogIn loginPage2 = LogIn.getInstance();
+        LogIn loginPage3 = new LogIn();
+
         LogOut logout = new LogOut();
 
-        loginPage2.loginMarketing51();
-        logout.setLogOut();;
+        loginPage3.loginMarketing51();
+        logout.setLogOut();
+
         Driver.killDriver();
         ThreadSleep.threadSleep(3);
 
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
-        loginPage2.loginMarketing52();
+
+        LogIn loginPage4 = new LogIn();
+
+        loginPage4.loginMarketing52();
         logout.setLogOut();
+
         Driver.killDriver();
         ThreadSleep.threadSleep(3);
     }
@@ -61,27 +65,27 @@ public class TC1_G26_47 {
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
 
-        LogIn loginPage3 = LogIn.getInstance();
+        LogIn loginPage5 = new LogIn();
+
         LogOut logout = new LogOut();
 
-        loginPage3.loginHelpDeck51();
+        loginPage5.loginHelpDeck51();
         logout.setLogOut();
+
         Driver.killDriver();
         ThreadSleep.threadSleep(3);
 
         Driver.setUpDriver();
         Driver.navigateToURL(Data.url);
 
-        loginPage3.loginHelpDeck52();
+        LogIn loginPage6 = new LogIn();
+
+        loginPage6.loginHelpDeck52();
         logout.setLogOut();
+
         Driver.killDriver();
         ThreadSleep.threadSleep(3);
     }
-
-*/
-
-
-
 
 }
 /*
@@ -96,43 +100,49 @@ public class TC1_G26_47 {
     public void logOutHRTeam() {
 
         LogIn loginPage1 = LogIn.getInstance();
+        LogOut logout = new LogOut();
+
         loginPage1.loginHR51();
-
-
-        LogOutPage.logOut(loginPage1);
+        logout.setLogOut();
         loginPage1.loginBox.clear();
         ThreadSleep.threadSleep(3);
 
         loginPage1.loginHR52();
-        LogOutPage.logOut(loginPage1);
+        logout.setLogOut();
         loginPage1.loginBox.clear();
         ThreadSleep.threadSleep(3);
     }
 
     @Test(description = "Verify Marketing Team can logout and back to login page")
     public void logOutMarketingTeam() {
+
         LogIn loginPage2 = LogIn.getInstance();
+        LogOut logout = new LogOut();
+
         loginPage2.loginMarketing51();
-        LogOutPage.logOut(loginPage2);
+        logout.setLogOut();
         loginPage2.loginBox.clear();
         ThreadSleep.threadSleep(3);
 
         loginPage2.loginMarketing52();
-        LogOutPage.logOut(loginPage2);
+        logout.setLogOut();
         loginPage2.loginBox.clear();
         ThreadSleep.threadSleep(3);
     }
 
     @Test(description = "Verify Help Deck Team can logout and back to login page")
     public void logOutHelpDeckTeam() {
+
         LogIn loginPage3 = LogIn.getInstance();
+        LogOut logout = new LogOut();
+
         loginPage3.loginHelpDeck51();
-        LogOutPage.logOut(loginPage3);
+        logout.setLogOut();
         loginPage3.loginBox.clear();
         ThreadSleep.threadSleep(3);
 
         loginPage3.loginHelpDeck52();
-        LogOutPage.logOut(loginPage3);
+        logout.setLogOut();
         loginPage3.loginBox.clear();
         ThreadSleep.threadSleep(3);
     }

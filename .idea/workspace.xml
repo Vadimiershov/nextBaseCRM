@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279b56bd-c78f-4525-b016-d538d5a8ea02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_18_21,_1_14_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_18_21__1_14_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CRMNextBaseProject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CRMNextBaseProject/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserStory5/VoteMethodsVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserStory5/VoteMethodsVerification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserStory5/VoteMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserStory5/VoteMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserStory5/VoteMethodsVerification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserStory5/VoteMethodsVerification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/Login 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserStory4/TC1_G26_54.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserStory4/TC1_G26_54.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,19 +48,15 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="TestNG.VoteMethodsVerification.poleVote">
-    <configuration name="Runner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nextBaseCRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CRMNextBaseProject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CRMNextBaseProject" />
-      <option name="MAIN_CLASS_NAME" value="CRMNextBaseProject.Runner" />
+  <component name="RunManager" selected="TestNG.TC1_G26_54">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -98,6 +92,24 @@
       <option name="PACKAGE_NAME" value="UserStory4" />
       <option name="MAIN_CLASS_NAME" value="UserStory4.TC1_G26_54" />
       <option name="METHOD_NAME" value="Login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC1_G26_54.pollHRMarket51" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserStory4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserStory4" />
+      <option name="MAIN_CLASS_NAME" value="UserStory4.TC1_G26_54" />
+      <option name="METHOD_NAME" value="pollHRMarket51" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.VoteMethodsVerification.poleVote" />
-        <item itemvalue="TestNG.TC1_G26_54.pollHRs" />
         <item itemvalue="TestNG.TC1_G26_54" />
+        <item itemvalue="TestNG.TC1_G26_54.pollHRMarket51" />
+        <item itemvalue="TestNG.TC1_G26_54.pollHRs" />
+        <item itemvalue="TestNG.VoteMethodsVerification.poleVote" />
         <item itemvalue="TestNG.TC1_G26_54.Login" />
-        <item itemvalue="TestNG.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +193,7 @@
       <workItem from="1611252285766" duration="1262000" />
       <workItem from="1611343831904" duration="768000" />
       <workItem from="1611421686569" duration="12471000" />
+      <workItem from="1611784177407" duration="797000" />
     </task>
     <task id="LOCAL-00001" summary="Automated user story4 wit hDriver method">
       <created>1609952168964</created>
@@ -417,14 +430,14 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/CRMNextBaseProject/Driver.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="36" />
+          <url>file://$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/CRMNextBaseProject/Driver.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="37" />
+          <url>file://$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/UserStory4/Random/PracticeVesa.java</url>

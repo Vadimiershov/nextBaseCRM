@@ -57,6 +57,9 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
     public WebElement taskModule;//changes
 
+    @FindBy(how = How.XPATH, using = "//a[@href='#like']")
+    public WebElement likeButton ; // to verify question text, and poll creating
+
 
 
 }

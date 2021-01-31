@@ -8,8 +8,8 @@ public class LogOutPage {
     @Test
     public static void logOut(LogIn logInPage){
         HomePage homePage1 = new HomePage();
-       // homePage1.userNameAvatarButton.click();
-   //     homePage1.logOutButton.click();
+        homePage1.userBlock.click();
+        homePage1.logOutLink.click();
     }
 
 }

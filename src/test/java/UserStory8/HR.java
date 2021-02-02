@@ -1,44 +1,66 @@
 package UserStory8;
 
-import CRMNextBaseProject.Data;
-import CRMNextBaseProject.Driver;
-import CRMNextBaseProject.HomePage;
-import CRMNextBaseProject.LogIn;
+import CRMNextBaseProject.*;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class HR {
     WebDriver chromeDriver;
-    @BeforeMethod(description = "setting up driver")
-    public void setUpDriver1(){
+
+    @BeforeSuite(description = "setting up driver")
+    public void setUpDriver1() {
         CRMNextBaseProject.Driver.setUpDriver();
         CRMNextBaseProject.Driver.navigateToURL(Data.url);
 
     }
 
-
-
-
-    @Test(description = "Verify users can write a poll message title with question & answer US4 TOD G26-46")
+    @Test(description = "US8 TC#1 Verify only hr and marketing team members can access to Task module.")
+    //HR
     public void Login() {
         LogIn loginPage = LogIn.getInstance();
         loginPage.loginHR51();
         HomePage homePage = new HomePage();
-       homePage.pollButton.click();
-
-
-
+        homePage.taskModule.click();
+        String expectedTitle = "My tasks";
+        String actualTitle = Driver.getDriver().getTitle();
+        Assert.assertTrue(actualTitle.contains(expectedTitle));
+        ThreadSleep.threadSleep(5);
     }
 
+    @Test(description = "US8 TC#3 Verify users can see all the task on task page. ")
+    //HR
+    public void checkAllTasks() {
+        HomePage homePage = new HomePage();
+        homePage.allCheckbox.click();
+        Assert.assertTrue(homePage.allCheckbox.isSelected(), "All checkbox is not selected");
+        Assert.assertEquals(homePage.totalTaskNumberChecked.getText(), homePage.totalTaskNumberActual.getText(),
+                "Total task number differ");
+    }
 
-
-
-
-        @AfterMethod
-        public void tearDown () {
-            Driver.killDriver();
+    @Test(description = "US8 TC#4 Verify users can access to any module by one click. ")
+    public void verifyModuleAccess() {
+        HomePage homePage = new HomePage();
+        for (WebElement each : homePage.listOfModules) {
+            try {
+                each.click();
+            } catch (StaleElementReferenceException e) {
+                e.printStackTrace();
+            }
+            ThreadSleep.threadSleep(3);
         }
+
+
     }
+
+
+    @AfterSuite
+    public void tearDown() {
+        Driver.killDriver();
+    }
+}
 

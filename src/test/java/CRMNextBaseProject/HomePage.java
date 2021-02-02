@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class HomePage {
 
     public HomePage() {
@@ -33,6 +35,16 @@ public class HomePage {
     @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
     public WebElement taskModule;
 
+    @FindBy(how = How.XPATH,using = "//input[@title='Check All / Uncheck All'][1]")
+    public WebElement allCheckbox;
 
+    @FindBy(how = How.XPATH,using = "//span[@class='main-grid-counter-selected'][1]")
+    public WebElement totalTaskNumberChecked;
+
+    @FindBy(how = How.XPATH,using = "//span[@class='main-grid-counter-displayed'][1]")
+    public WebElement totalTaskNumberActual;
+
+    @FindBy(how = How.XPATH,using = "//div[@class='main-buttons']//div")
+    public List<WebElement>listOfModules;
 
 }

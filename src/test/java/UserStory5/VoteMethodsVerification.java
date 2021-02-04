@@ -17,7 +17,7 @@ public class VoteMethodsVerification {
 
     @Test(description = "To check that different users are able to vote, they can vote again, and poll " +
             "creator able to stop the poll. " +
-            "Change question for the poll (duplicates not allowed)before running test in Data" +
+            " Precondition: change question for the poll(duplicates not allowed)before running test in Data" +
             "by default users voting for first answer in the poll.")
     public void poleVote() {
 

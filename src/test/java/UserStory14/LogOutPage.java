@@ -4,7 +4,7 @@ import CRMNextBaseProject.HomePage;
 import CRMNextBaseProject.LogIn;
 import org.testng.annotations.Test;
 
-public class LogOutPage {
+/*public class LogOutPage {
     @Test
     public static void logOut(LogIn logInPage){
         HomePage homePage1 = new HomePage();
@@ -13,3 +13,4 @@ public class LogOutPage {
     }
 
 }
+*/

@@ -5,7 +5,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC1_G26_47 {
+/*public class TC1_G26_47 {
 
     @BeforeClass
     public void setUpDriver1() {
@@ -66,3 +66,4 @@ public class TC1_G26_47 {
 
 
 }
+*/

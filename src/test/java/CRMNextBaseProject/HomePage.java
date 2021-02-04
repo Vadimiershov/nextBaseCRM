@@ -59,5 +59,24 @@ public class HomePage {
 
 
 
+    // Galyna added for poll creation to be moved to PollCreation class when Vadym does merge request // 01/23/21
+
+    @FindBy(how = How.XPATH, using = "//div[@id='feed-add-post-destination-container']")
+    public WebElement clearRecipientsPoll;
+
+    @FindBy(how = How.XPATH, using = "//span[@class='feed-add-post-del-but']")
+    public WebElement removeAllEmployee;
+
+
+
+    @FindBy(how = How.XPATH, using = "//input[@id='feed-add-post-destination-input']")
+    public WebElement addRecipientss ;
+
+
+
+
+
+
+
 
 }

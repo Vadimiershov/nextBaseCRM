@@ -1,9 +1,7 @@
 package UserStory14;
 
 import CRMNextBaseProject.*;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class TC1_G26_47 {
 
@@ -15,54 +13,148 @@ public class TC1_G26_47 {
     }
 
     @Test(description = "Verify HR Team can logout and back to login page")
-    public void logOutHRTeam(){
+    public void logOutHRTeam() {
+
         LogIn loginPage1 = LogIn.getInstance();
+        LogOut logout = new LogOut();
+
         loginPage1.loginHR51();
-        LogOutPage.logOut(loginPage1);
+        logout.setLogOut();
         loginPage1.loginBox.clear();
         ThreadSleep.threadSleep(3);
 
-        loginPage1.loginHR52();
-        LogOutPage.logOut(loginPage1);
-        loginPage1.loginBox.clear();
+        LogIn loginPage2 = LogIn.getInstance();
+
+        loginPage2.loginHR52();
+        logout.setLogOut();
+        loginPage2.loginBox.clear();
         ThreadSleep.threadSleep(3);
     }
 
     @Test(description = "Verify Marketing Team can logout and back to login page")
-    public void logOutMarketingTeam(){
-        LogIn loginPage2 = LogIn.getInstance();
-        loginPage2.loginMarketing51();
-        LogOutPage.logOut(loginPage2);
-        loginPage2.loginBox.clear();
+    public void logOutMarketingTeam() {
+
+        LogIn loginPage1 = LogIn.getInstance();
+        LogOut logout = new LogOut();
+
+        loginPage1.loginMarketing51();
+        logout.setLogOut();
+        loginPage1.loginBox.clear();
         ThreadSleep.threadSleep(3);
 
+        LogIn loginPage2 = LogIn.getInstance();
+
         loginPage2.loginMarketing52();
-        LogOutPage.logOut(loginPage2);
+        logout.setLogOut();
         loginPage2.loginBox.clear();
         ThreadSleep.threadSleep(3);
     }
 
     @Test(description = "Verify Help Deck Team can logout and back to login page")
-    public void logOutHelpDeckTeam(){
-        LogIn loginPage3 = LogIn.getInstance();
-        loginPage3.loginHelpDeck51();
-        LogOutPage.logOut(loginPage3);
-        loginPage3.loginBox.clear();
+    public void logOutHelpDeckTeam() {
+
+        LogIn loginPage1 = LogIn.getInstance();
+        LogOut logout = new LogOut();
+
+        loginPage1.loginHelpDeck51();
+        logout.setLogOut();
+        loginPage1.loginBox.clear();
         ThreadSleep.threadSleep(3);
 
-        loginPage3.loginHelpDeck52();
-        LogOutPage.logOut(loginPage3);
-        loginPage3.loginBox.clear();
-        ThreadSleep.threadSleep(3);
+        LogIn loginPage2 = LogIn.getInstance();
+
+        loginPage2.loginHelpDeck52();
+        logout.setLogOut();
+        loginPage2.loginBox.clear();
     }
 
-   @AfterClass
-    public void closeWebPage(){
+    @AfterClass
+    public void closeWebPage() {
         Driver.killDriver();
         ThreadSleep.threadSleep(3);
     }
 
+}
+/*
+    @Test(description = "Verify HR Team can logout and back to login page")
+    public void logOutHR1() {
+        Driver.setUpDriver();
+        Driver.navigateToURL(Data.url);
 
+        LogIn loginPage1 = LogIn.getInstance();
+
+        LogOut logout = new LogOut();
+
+        loginPage1.loginHR51();
+        logout.setLogOut();
+
+        Driver.killDriver();
+        ThreadSleep.threadSleep(3);
+
+       // Driver.setUpDriver();
+       // Driver.navigateToURL(Data.url);
+
+       // LogIn loginPage2 = LogIn.getInstance();
+
+       // loginPage2.loginHR52();
+       // logout.setLogOut();
+       // Driver.killDriver();
+      //  ThreadSleep.threadSleep(3);
 
 
 }
+
+    @Test(description = "Verify Marketing Team can logout and back to login page")
+    public void logOutMarketingTeam() {
+        Driver.setUpDriver();
+        Driver.navigateToURL(Data.url);
+
+        LogIn loginPage3 = LogIn.getInstance();
+
+        LogOut logout = new LogOut();
+
+        loginPage3.loginMarketing51();
+        logout.setLogOut();
+
+        Driver.killDriver();
+        ThreadSleep.threadSleep(3);
+
+     //   Driver.setUpDriver();
+       // Driver.navigateToURL(Data.url);
+
+      //  LogIn loginPage4 = LogIn.getInstance();
+
+      //  loginPage4.loginMarketing52();
+      //  logout.setLogOut();
+
+      //  Driver.killDriver();
+      //  ThreadSleep.threadSleep(3);
+    }
+
+    @Test(description = "Verify Help Deck Team can logout and back to login page")
+    public void logOutHelpDeckTeam() {
+        Driver.setUpDriver();
+        Driver.navigateToURL(Data.url);
+
+        LogIn loginPage5 = LogIn.getInstance();
+
+        LogOut logout = new LogOut();
+
+        loginPage5.loginHelpDeck51();
+        logout.setLogOut();
+
+        Driver.killDriver();
+        ThreadSleep.threadSleep(3);
+
+       // Driver.setUpDriver();
+       // Driver.navigateToURL(Data.url);
+
+     //   LogIn loginPage6 = new LogIn();
+
+      //  loginPage6.loginHelpDeck52();
+     //   logout.setLogOut();
+
+       // Driver.killDriver();
+       // ThreadSleep.threadSleep(3);
+    }
+*/

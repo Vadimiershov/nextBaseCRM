@@ -50,7 +50,8 @@ public class HomePage {
 
     @FindBy(how = How.XPATH, using = "//a[@title='Tasks']")
     public WebElement taskModule;
-
+@FindBy(how= How.ID, using= "search-textbox-input")
+    public WebElement searchBox2;
 
 
 }

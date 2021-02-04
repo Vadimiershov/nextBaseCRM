@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class searchBox {
 
@@ -34,15 +35,26 @@ public class searchBox {
         //Found search box element using id
         WebElement searchBox= driver.findElement(By.id("search-textbox-input"));
 
+
         //Write in the search box: "Activity Stream"
-        searchBox.sendKeys("Activity Stream"+"\n");
+       searchBox.sendKeys("Activity Stream"+"\n");
+
 
         //driver.back()
         driver.navigate().back();
 
+        searchBox.sendKeys("Employees"+"\n");
+
+
         //Locate the searchBox
-        searchBox.sendKeys("Tasks"+"\n");
-        driver.navigate().back();
+
+       // searchBox.sendKeys("Tasks"+"\n");
+      //  driver.navigate().back();
+        //searchBox.sendKeys("Tasks"+"\n");
+       // driver.navigate().back();
+       // searchBox.sendKeys("Chats and Calls");
+
+       // driver.navigate().back();
 
 
 

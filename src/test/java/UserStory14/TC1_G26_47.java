@@ -66,7 +66,6 @@ public class TC1_G26_47 {
         loginPage2.loginHelpDeck52();
         logout.setLogOut();
         loginPage2.loginBox.clear();
-        ThreadSleep.threadSleep(3);
     }
 
     @AfterClass

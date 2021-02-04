@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279b56bd-c78f-4525-b016-d538d5a8ea02" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_23_21,_11_26_PM_[Default_Changelist]/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_23_21,_11_26_PM_[Default_Changelist]/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_23_21,_11_26_PM_[Default_Changelist]/LogIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_23_21,_11_26_PM_[Default_Changelist]/TC1_G26_54.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_23_21,_11_26_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_23_21__11_26_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserStory4/Random/RandomClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserStory4/Random/RandomClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CRMNextBaseProject/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CRMNextBaseProject/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +61,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,7 +192,8 @@
       <workItem from="1611784177407" duration="2402000" />
       <workItem from="1611870922121" duration="484000" />
       <workItem from="1611930999924" duration="178000" />
-      <workItem from="1611964688223" duration="197000" />
+      <workItem from="1611964688223" duration="432000" />
+      <workItem from="1612289943191" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="Automated user story4 wit hDriver method">
       <created>1609952168964</created>
@@ -386,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611871327305</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Merge branch 'Vadym' of https://github.com/Vadimiershov/nextBaseCRM into gstorozhuk&#10;&#10; Conflicts:&#10;&#9;src/main/java/UserStory1/Login.java&#10;&#9;src/main/java/UserStory5/Hr.java&#10;&#9;target/classes/UserStory5/Hr.class">
+      <created>1612031819915</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1612031819915</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,11 +463,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/UserStory6/ClockIn.java</url>
           <line>33</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserStory4/TC1_G26_54.java</url>

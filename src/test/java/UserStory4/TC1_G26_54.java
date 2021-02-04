@@ -125,6 +125,7 @@ public class TC1_G26_54 {
         ThreadSleep.threadSleep(2);
         WebElement createdPollOnFeed2 = getDriver().findElement(By.xpath("//div[contains(text(), '" + fakerText2 + "')]"));
         ThreadSleep.threadSleep(5);
+
         Assert.assertTrue(createdPollOnFeed2.isDisplayed(), "Poll text was not found!!!!!!");
 
     }

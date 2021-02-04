@@ -1,16 +1,15 @@
 package CRMNextBaseProject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogIn extends Driver{
-    private static LogIn loginInstance;
+    private static LogIn loginInstance; // null
 
-    public LogIn() {
-        PageFactory.initElements(getDriver(), this);
+   private LogIn() {
+        PageFactory.initElements(getDriver(), this); // this is all instance variables for this class , if super
     }
 
     public static LogIn getInstance() {
@@ -36,43 +35,43 @@ public class LogIn extends Driver{
 
     public void loginHR51() {
         loginBox.clear();
-        loginBox.sendKeys(login.hr51);
-        passwordBox.sendKeys(login.password);
+        loginBox.sendKeys(Data.hr51);
+        passwordBox.sendKeys(Data.password);
         loginBtn.click();
     }
 
     public void loginHR52(){
         loginBox.clear();
-        loginBox.sendKeys(login.hr52);
-        passwordBox.sendKeys(login.password);
+        loginBox.sendKeys(Data.hr52);
+        passwordBox.sendKeys(Data.password);
         loginBtn.click();
     }
 
     public void loginMarketing51() {
         loginBox.clear();
-        loginBox.sendKeys(login.marketing51);
-        passwordBox.sendKeys(login.password);
+        loginBox.sendKeys(Data.marketing51);
+        passwordBox.sendKeys(Data.password);
         loginBtn.click();
     }
 
     public void loginMarketing52() {
         loginBox.clear();
-        loginBox.sendKeys(login.marketing52);
-        passwordBox.sendKeys(login.password);
+        loginBox.sendKeys(Data.marketing52);
+        passwordBox.sendKeys(Data.password);
         loginBtn.click();
     }
 
     public void loginHelpDeck51() {
         loginBox.clear();
-        loginBox.sendKeys(login.helpdesk51);
-        passwordBox.sendKeys(login.password);
+        loginBox.sendKeys(Data.helpdesk51);
+        passwordBox.sendKeys(Data.password);
         loginBtn.click();
     }
 
     public void loginHelpDeck52() {
         loginBox.clear();
-        loginBox.sendKeys(login.helpdesk51);
-        passwordBox.sendKeys(login.password);
+        loginBox.sendKeys(Data.helpdesk52);
+        passwordBox.sendKeys(Data.password);
         loginBtn.click();
     }
 

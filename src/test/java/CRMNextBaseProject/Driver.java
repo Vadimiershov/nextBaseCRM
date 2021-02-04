@@ -28,8 +28,7 @@ public class Driver {
        chromeDriver.quit();
    }
     public static void implicitWait (){
-
-        chromeDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+       chromeDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
        }
 
    }

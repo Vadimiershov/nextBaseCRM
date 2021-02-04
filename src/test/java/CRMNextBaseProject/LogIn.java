@@ -6,10 +6,10 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogIn extends Driver{
-    private static LogIn loginInstance;
+    private static LogIn loginInstance; // null
 
-    public LogIn() {
-        PageFactory.initElements(getDriver(), this);
+   private LogIn() {
+        PageFactory.initElements(getDriver(), this); // this is all instance variables for this class , if super
     }
 
     public static LogIn getInstance() {

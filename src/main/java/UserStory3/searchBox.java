@@ -10,47 +10,39 @@ public class searchBox {
 
     public static void main(String[] args) throws InterruptedException {
 
-        //Setup
+        //setup
         WebDriverManager.chromedriver().setup();
-
-        //Create instance of the browser
+        //create instance of the browser
         WebDriver driver = new ChromeDriver();
-
-        //Go to this website "http://login2.nextbasecrm.com/"
+        //go to this website "http://login2.nextbasecrm.com/"
         driver.get("http://login2.nextbasecrm.com/");
         Thread.sleep(2000);
-
-        //Enter userLogin marketing
+        //enter userLogin
         driver.findElement(By.name("USER_LOGIN")).sendKeys("marketing51@cybertekschool.com");
         Thread.sleep(2000);
-
-        // Enter password
+        // enter password
         driver.findElement(By.name("USER_PASSWORD")).sendKeys("UserUser");
         Thread.sleep(2000);
-
         //click on login
         driver.findElement(By.className("login-btn")).click();
 
-        //Found search box element using id
-        WebElement searchBox= driver.findElement(By.id("search-textbox-input"));
+        //Click in search button
+        driver.findElement(By.className("login-btn")).click();
 
-        //Write in the search box: "Activity Stream"
-        searchBox.sendKeys("Activity Stream"+"\n");
+        //WebElement for searchBox
+        WebElement searchBox = driver.findElement(By.id("search-textbox-input"));
 
-        //driver.back()
-        driver.navigate().back();
+        //search people
+        searchBox.sendKeys("People");
+        //searchBox.click();
+        // driver.navigate().back();
 
-        //Locate the searchBox
-        searchBox.sendKeys("Tasks"+"\n");
-        driver.navigate().back();
+        //searchBox.sendKeys(new CharSequence[]{"Documents\n"});
 
-
-
-        // Use try and catch for exception
-            Thread.sleep(5000);
-            driver.close();
-        }
     }
+
+    }
+
 
 
 

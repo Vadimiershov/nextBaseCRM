@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279b56bd-c78f-4525-b016-d538d5a8ea02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nextBaseCRM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserStory3/SelfParctice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserStory3/SearchBox1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserStory3/searchBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserStory3/searchBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CRMNextBaseProject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CRMNextBaseProject/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserStory3/SearchBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserStory3/SearchBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserStory3/SearchBox1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserStory3/searchBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserStory3/searchBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserStory4/Random/RandomClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserStory4/Random/RandomClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CRMNextBaseProject/LogIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserStory3/SearchBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserStory3/SearchBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserStory4/TC1_G26_54.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserStory4/TC1_G26_54.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +45,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mhhGOGtHpKwD4Ttgd41uxH4uer" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -37,6 +53,7 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -44,16 +61,75 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="TestNG.TC1_G26_54">
-    <configuration name="RandomClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UserStory4.Random.RandomClass" />
+  <component name="RunManager" selected="Application.SelfParctice">
+    <configuration name="SelfParctice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserStory3.SelfParctice" />
       <module name="nextBaseCRM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UserStory4.Random.*" />
+          <option name="PATTERN" value="UserStory3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="searchBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserStory3.searchBox" />
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserStory3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchBox" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserStory3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserStory3" />
+      <option name="MAIN_CLASS_NAME" value="UserStory3.SearchBox" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchBox.searchBoxMarketing51" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nextBaseCRM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserStory3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserStory3" />
+      <option name="MAIN_CLASS_NAME" value="UserStory3.SearchBox" />
+      <option name="METHOD_NAME" value="searchBoxMarketing51" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,67 +151,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC1_G26_54.pollHRMarket51" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nextBaseCRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UserStory4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UserStory4" />
-      <option name="MAIN_CLASS_NAME" value="UserStory4.TC1_G26_54" />
-      <option name="METHOD_NAME" value="pollHRMarket51" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC1_G26_54.pollHRs" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nextBaseCRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UserStory4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UserStory4" />
-      <option name="MAIN_CLASS_NAME" value="UserStory4.TC1_G26_54" />
-      <option name="METHOD_NAME" value="pollHRs" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VoteMethodsVerification.poleVote" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nextBaseCRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UserStory5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UserStory5" />
-      <option name="MAIN_CLASS_NAME" value="UserStory5.VoteMethodsVerification" />
-      <option name="METHOD_NAME" value="poleVote" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelfParctice" />
+        <item itemvalue="TestNG.SearchBox" />
+        <item itemvalue="TestNG.SearchBox.searchBoxMarketing51" />
+        <item itemvalue="Application.searchBox" />
         <item itemvalue="TestNG.TC1_G26_54" />
-        <item itemvalue="Application.RandomClass" />
-        <item itemvalue="TestNG.TC1_G26_54.pollHRMarket51" />
-        <item itemvalue="TestNG.TC1_G26_54.pollHRs" />
-        <item itemvalue="TestNG.VoteMethodsVerification.poleVote" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +198,7 @@
       <workItem from="1612289943191" duration="260000" />
       <workItem from="1612408706600" duration="190000" />
       <workItem from="1612454171037" duration="438000" />
+      <workItem from="1612462133232" duration="3544000" />
     </task>
     <task id="LOCAL-00001" summary="Automated user story4 wit hDriver method">
       <created>1609952168964</created>

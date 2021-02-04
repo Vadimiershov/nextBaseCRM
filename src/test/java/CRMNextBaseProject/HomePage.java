@@ -1,5 +1,6 @@
 package CRMNextBaseProject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -71,6 +72,9 @@ public class HomePage {
 
     @FindBy(how = How.XPATH, using = "//input[@id='feed-add-post-destination-input']")
     public WebElement addRecipientss ;
+
+    @FindBy(how = How.ID, using= "search-textbox-input")
+    public WebElement searchBox2;
 
 
 

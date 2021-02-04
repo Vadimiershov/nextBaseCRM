@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/nextBaseCRM.iml" filepath="$PROJECT_DIR$/.idea/nextBaseCRM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextBaseCRM.iml" filepath="$PROJECT_DIR$/nextBaseCRM.iml" />
     </modules>
   </component>
 </project>

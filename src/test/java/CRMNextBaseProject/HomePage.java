@@ -74,6 +74,47 @@ public class HomePage {
 
 
 
+    //nour
+
+
+    @FindBy(how = How.CLASS_NAME, using = "bx-ilike-text")
+    public WebElement likeButton; //finding the like button for the tested .
+
+    @FindBy(how = How.XPATH, using = "//div[@class='feed-post-emoji-text-box feed-post-emoji-move-to-right']")
+    public WebElement likeButtonIsDisplayed;
+
+    @FindBy(how = How.LINK_TEXT, using = "Follow")
+    public WebElement followButton;
+
+    @FindBy(how = How.CSS, using = "span#feed-post-contentview-cnt-BLOG_POST-3457")
+    public WebElement viewedPost;
+
+    @FindBy(how = How.XPATH, using = "//div[@id='log_entry_favorites_7554']")
+    public WebElement favoriteStar;
+
+    @FindBy(how = How.XPATH, using = "//a[@id='blog-post-addc-add-3459']")
+    public WebElement commentButton;
+
+    @FindBy(how = How.XPATH, using = "//button[@class='ui-btn ui-btn-sm ui-btn-primary']")
+    public WebElement sendButton;
+
+    @FindBy(how = How.XPATH, using = "//a[@class='feed-com-add-link']")
+    public WebElement commentBody;
+
+    @FindBy(how = How.XPATH, using ="//body")
+    public WebElement typeComment ;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
